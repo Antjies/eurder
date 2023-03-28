@@ -24,4 +24,8 @@ public class CustomerService {
         Customer newCustomer = customerMapper.toDomain(createCustomerDTO);
         return customerMapper.toDTO(customerRepository.addCustomer(newCustomer));
     }
+
+    public CustomerDTO getCustomerById(String id) {
+        return customerMapper.toCustomerDTO(customerRepository.getCustomerById(id));
+    }
 }

@@ -2,6 +2,7 @@ package com.switchfully.eurder.service.mappers;
 
 import com.switchfully.eurder.domain.models.Customer;
 import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
+import com.switchfully.eurder.service.dtos.CustomerDTO;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,6 +20,16 @@ public class CustomerMapper {
 
     public CreateCustomerDTO toDTO(Customer customer) {
         return new CreateCustomerDTO()
+                .setFirstName(customer.getFirstName())
+                .setLastName(customer.getLastName())
+                .setAddress(addressMapper.toDTO(customer.getAddress()))
+                .setEmailAddress(customer.getEmailAddress())
+                .setPhoneNumber(customer.getPhoneNumber());
+    }
+
+    public CustomerDTO toCustomerDTO(Customer customer) {
+        return new CustomerDTO()
+                .setId(customer.getId())
                 .setFirstName(customer.getFirstName())
                 .setLastName(customer.getLastName())
                 .setAddress(addressMapper.toDTO(customer.getAddress()))
