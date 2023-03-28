@@ -1,6 +1,11 @@
 package com.switchfully.eurder.service.dtos;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 public class CreateCustomerDTO {
+    @NotNull
+    @NotEmpty
     private String firstName;
     private String lastName;
     private String emailAddress;

@@ -5,6 +5,7 @@ import com.switchfully.eurder.domain.repositories.CustomerRepository;
 import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
 import com.switchfully.eurder.service.dtos.CustomerDTO;
 import com.switchfully.eurder.service.mappers.CustomerMapper;
+import com.switchfully.eurder.service.validation.CustomerValidationAtCreationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,7 @@ public class CustomerService {
     }
 
     public CreateCustomerDTO registerNewCustomer(CreateCustomerDTO createCustomerDTO) {
+        CustomerValidationAtCreationService.validateCustomer(createCustomerDTO);
         Customer newCustomer = customerMapper.toDomain(createCustomerDTO);
         return customerMapper.toDTO(customerRepository.addCustomer(newCustomer));
     }
@@ -35,4 +37,6 @@ public class CustomerService {
     public Collection<CustomerDTO> getAllCustomers() {
         return customerMapper.toCollectionDTO(customerRepository.getAllCustomers());
     }
+
+
 }
