@@ -8,15 +8,28 @@ public abstract class User {
     private final String firstName;
     private final String lastName;
     private String emailAddress;
-    private Address address;
-    private String phoneNumber;
+    //List<Feature> featureList;
 
-    public User(String firstName, String lastName, String emailAddress, Address address, String phoneNumber) {
+    public User(String firstName, String lastName, String emailAddress) {
         this.id = UUID.randomUUID().toString();
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
     }
 }
