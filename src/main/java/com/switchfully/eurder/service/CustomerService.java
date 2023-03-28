@@ -16,15 +16,17 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
     private final CustomerMapper customerMapper;
+    private final CustomerValidationAtCreationService customerValidationAtCreationService;
 
     @Autowired
-    public CustomerService(CustomerRepository customerRepository, CustomerMapper customerMapper) {
+    public CustomerService(CustomerRepository customerRepository, CustomerMapper customerMapper, CustomerValidationAtCreationService customerValidationAtCreationService) {
         this.customerRepository = customerRepository;
         this.customerMapper = customerMapper;
+        this.customerValidationAtCreationService = customerValidationAtCreationService;
     }
 
     public CreateCustomerDTO registerNewCustomer(CreateCustomerDTO createCustomerDTO) {
-        CustomerValidationAtCreationService.validateCustomer(createCustomerDTO);
+        customerValidationAtCreationService.validateCustomer(createCustomerDTO);
         Customer newCustomer = customerMapper.toDomain(createCustomerDTO);
         return customerMapper.toDTO(customerRepository.addCustomer(newCustomer));
     }
@@ -32,7 +34,6 @@ public class CustomerService {
     public CustomerDTO getCustomerById(String id) {
         return customerMapper.toCustomerDTO(customerRepository.getCustomerById(id));
     }
-
 
     public Collection<CustomerDTO> getAllCustomers() {
         return customerMapper.toCollectionDTO(customerRepository.getAllCustomers());

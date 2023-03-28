@@ -4,37 +4,37 @@ import com.switchfully.eurder.domain.models.Address;
 import com.switchfully.eurder.exception.exceptions.CustomerFirstNameIsEmpty;
 import com.switchfully.eurder.service.dtos.AddressDTO;
 import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
+import org.springframework.stereotype.Component;
 
 
+@Component
 public class CustomerValidationAtCreationService {
 
-    public static void validateCustomer(CreateCustomerDTO createCustomerDTO){
-        CustomerValidationAtCreationService.validateFirstName(createCustomerDTO.getFirstName());
-        CustomerValidationAtCreationService.validateLastName(createCustomerDTO.getFirstName());
-        CustomerValidationAtCreationService.validateEmailAddress(createCustomerDTO.getEmailAddress());
-        CustomerValidationAtCreationService.validateAddress(createCustomerDTO.getAddress());
-        CustomerValidationAtCreationService.validatePhoneNumber(createCustomerDTO.getPhoneNumber());
+    public void validateCustomer(CreateCustomerDTO createCustomerDTO){
+        validateCustomerDTO(createCustomerDTO);
+        validateAddressDTO(createCustomerDTO.getAddress());
+        // ADD validation USER EMAIL already exists!
     }
 
-    private static void validateFirstName(String firstName) {
-        if (firstName == null || firstName.isBlank()) {
+    private void validateCustomerDTO(CreateCustomerDTO createCustomerDTO){
+        if (createCustomerDTO.getFirstName() == null || createCustomerDTO.getFirstName().isBlank()) {
             throw new CustomerFirstNameIsEmpty("Please add a first name to register");
         }
-    }
 
-    private static void validateLastName(String lastName) {
-        if (lastName == null || lastName.isBlank()) {
+        if (createCustomerDTO.getLastName() == null || createCustomerDTO.getLastName().isBlank()) {
             throw new RuntimeException();
         }
-    }
 
-    private static void validateEmailAddress(String email) {
-        if (email == null || email.isBlank() || !(email.matches("^(.+)@(\\S+)$"))) {
+        if (createCustomerDTO.getEmailAddress() == null || createCustomerDTO.getEmailAddress().isBlank() || !(createCustomerDTO.getEmailAddress().matches("^(.+)@(\\S+)$"))) {
             throw new RuntimeException();
         }
+        if (createCustomerDTO.getPhoneNumber() == null || createCustomerDTO.getPhoneNumber().isBlank() || !(createCustomerDTO.getPhoneNumber().matches("^(((\\+|00)32[ ]?(?:\\(0\\)[ ]?)?)|0){1}(4(60|[789]\\d)\\/?(\\s?\\d{2}\\.?){2}(\\s?\\d{2})|(\\d\\/?\\s?\\d{3}|\\d{2}\\/?\\s?\\d{2})(\\.?\\s?\\d{2}){2})$"))) {
+            throw new RuntimeException();
+        }
+
     }
 
-    private static void validateAddress(AddressDTO addressDTO) {
+    private static void validateAddressDTO(AddressDTO addressDTO) {
         if (addressDTO == null) {
             throw new RuntimeException();
         }
@@ -48,12 +48,6 @@ public class CustomerValidationAtCreationService {
             throw new RuntimeException();
         }
         if (addressDTO.getCity() == null || addressDTO.getCity().isBlank()) {
-            throw new RuntimeException();
-        }
-    }
-
-    private static void validatePhoneNumber(String phoneNumber) {
-        if (phoneNumber == null || phoneNumber.isBlank() || !(phoneNumber.matches("^(((\\+|00)32[ ]?(?:\\(0\\)[ ]?)?)|0){1}(4(60|[789]\\d)\\/?(\\s?\\d{2}\\.?){2}(\\s?\\d{2})|(\\d\\/?\\s?\\d{3}|\\d{2}\\/?\\s?\\d{2})(\\.?\\s?\\d{2}){2})$"))) {
             throw new RuntimeException();
         }
     }

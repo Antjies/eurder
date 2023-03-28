@@ -1,5 +1,6 @@
 package com.switchfully.eurder.domain.models;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public abstract class User {
@@ -31,5 +32,17 @@ public abstract class User {
 
     public String getEmailAddress() {
         return emailAddress;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User user)) return false;
+        return id.equals(user.id) || emailAddress.equals(user.emailAddress);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, emailAddress);
     }
 }
