@@ -1,0 +1,17 @@
+2023-03-28T14:56:05.744+02:00  INFO 14956 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 14956 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-28T14:56:05.747+02:00  INFO 14956 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-28T14:56:06.443+02:00  INFO 14956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-28T14:56:06.451+02:00  INFO 14956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-28T14:56:06.451+02:00  INFO 14956 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-28T14:56:06.518+02:00  INFO 14956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-28T14:56:06.519+02:00  INFO 14956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 739 ms
+2023-03-28T14:56:07.072+02:00  INFO 14956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28T14:56:07.079+02:00  INFO 14956 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.648 seconds (process running for 2.033)
+2023-03-28T14:57:23.024+02:00  INFO 14956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28T14:57:23.024+02:00  INFO 14956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-28T14:57:23.025+02:00  INFO 14956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-28T14:57:23.526+02:00  INFO 14956 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 160 ms
+2023-03-28T14:57:52.090+02:00  INFO 14956 --- [http-nio-8080-exec-3] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-28T14:57:54.023+02:00  INFO 14956 --- [http-nio-8080-exec-5] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-28T14:59:17.334+02:00  INFO 14956 --- [http-nio-8080-exec-1] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-28T14:59:18.202+02:00  INFO 14956 --- [http-nio-8080-exec-10] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called

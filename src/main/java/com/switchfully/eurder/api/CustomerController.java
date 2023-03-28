@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
+
 @RestController
 @RequestMapping(path = "customers")
 public class CustomerController {
@@ -34,6 +36,13 @@ public class CustomerController {
     public CustomerDTO showDetailsOfBook(@PathVariable String id) {
         // ADMIN AUTHORIZATION
         return customerService.getCustomerById(id);
+    }
+
+    @GetMapping(produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public Collection<CustomerDTO> getAllCustomers(){
+        // ADMin AUTHORIZATION
+        return customerService.getAllCustomers();
     }
 
 

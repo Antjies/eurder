@@ -8,6 +8,8 @@ import com.switchfully.eurder.service.mappers.CustomerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+
 @Service
 public class CustomerService {
 
@@ -27,5 +29,10 @@ public class CustomerService {
 
     public CustomerDTO getCustomerById(String id) {
         return customerMapper.toCustomerDTO(customerRepository.getCustomerById(id));
+    }
+
+
+    public Collection<CustomerDTO> getAllCustomers() {
+        return customerMapper.toCollectionDTO(customerRepository.getAllCustomers());
     }
 }
