@@ -1,27 +1,17 @@
 package com.switchfully.eurder.service.dtos;
 
-public class CustomerDTO {
-    private String id;
+public class CreateCustomerDTO {
     private String firstName;
     private String lastName;
     private String emailAddress;
     private AddressDTO address;
     private String phoneNumber;
 
-    public String getId() {
-        return id;
-    }
-
-    public CustomerDTO setId(String id) {
-        this.id = id;
-        return this;
-    }
-
     public String getFirstName() {
         return firstName;
     }
 
-    public CustomerDTO setFirstName(String firstName) {
+    public CreateCustomerDTO setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -30,7 +20,7 @@ public class CustomerDTO {
         return lastName;
     }
 
-    public CustomerDTO setLastName(String lastName) {
+    public CreateCustomerDTO setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -39,7 +29,7 @@ public class CustomerDTO {
         return emailAddress;
     }
 
-    public CustomerDTO setEmailAddress(String emailAddress) {
+    public CreateCustomerDTO setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
         return this;
     }
@@ -48,7 +38,7 @@ public class CustomerDTO {
         return address;
     }
 
-    public CustomerDTO setAddress(AddressDTO address) {
+    public CreateCustomerDTO setAddress(AddressDTO address) {
         this.address = address;
         return this;
     }
@@ -57,10 +47,8 @@ public class CustomerDTO {
         return phoneNumber;
     }
 
-    public CustomerDTO setPhoneNumber(String phoneNumber) {
+    public CreateCustomerDTO setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         return this;
     }
 }
-
-
