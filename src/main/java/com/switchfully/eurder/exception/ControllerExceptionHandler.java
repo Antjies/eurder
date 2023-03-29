@@ -1,7 +1,6 @@
 package com.switchfully.eurder.exception;
 
-import com.switchfully.eurder.exception.exceptions.CustomerNotFoundException;
-import com.switchfully.eurder.exception.exceptions.CustomerEmailAddressAlreadyExists;
+import com.switchfully.eurder.exception.exceptions.*;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +24,31 @@ public class ControllerExceptionHandler {
     protected void CustomerEmailAddressAlreadyExists(CustomerEmailAddressAlreadyExists ex, HttpServletResponse response) throws IOException {
         response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
     }
+
+    @ExceptionHandler(ValidateCustomerInput.class)
+    protected void ValidateCustomerInput(ValidateCustomerInput ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }
+
+    /*@ExceptionHandler(CustomerFirstNameIsEmpty.class)
+    protected void CustomerFirstNameIsEmpty(CustomerFirstNameIsEmpty ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }
+
+    @ExceptionHandler(CustomerLastNameIsEmpty.class)
+    protected void CustomerLastNameIsEmpty(CustomerLastNameIsEmpty ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }
+
+    @ExceptionHandler(CustomerEmailAddressDoesntMatchRequirement.class)
+    protected void CustomerEmailAddressDoesntMatchRequirement(CustomerEmailAddressDoesntMatchRequirement ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }
+
+    @ExceptionHandler(CustomerPhoneNumberDoesntMatchRequirement.class)
+    protected void CustomerPhoneNumberDoesntMatchRequirement(CustomerPhoneNumberDoesntMatchRequirement ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }*/
 
 
 
