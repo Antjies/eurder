@@ -1,6 +1,6 @@
 package com.switchfully.eurder.service.validation;
 
-import com.switchfully.eurder.domain.repositories.CustomerRepository;
+import com.switchfully.eurder.domain.repositories.UserRepository;
 import com.switchfully.eurder.exception.exceptions.CustomerEmailAddressAlreadyExists;
 import com.switchfully.eurder.exception.exceptions.ValidateCustomerInput;
 import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomerValidationAtCreationService {
 
-    private CustomerRepository customerRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    public CustomerValidationAtCreationService(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
+    public CustomerValidationAtCreationService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     public void validateCustomer(CreateCustomerDTO createCustomerDTO){
@@ -24,7 +24,7 @@ public class CustomerValidationAtCreationService {
     }
 
     private void validateIfEmailExistAlready(CreateCustomerDTO createCustomerDTO) throws CustomerEmailAddressAlreadyExists {
-        if (customerRepository.getAllCustomers().stream()
+        if (userRepository.getAllCustomers().stream()
                 .map(customers -> customers.getEmailAddress())
                 .anyMatch(email -> email.equals(createCustomerDTO.getEmailAddress()))){
             throw new CustomerEmailAddressAlreadyExists("The email address already exists");

@@ -17,8 +17,8 @@
 java.lang.RuntimeException: null
 	at com.switchfully.eurder.service.validation.CustomerValidationAtCreationService.validateCustomerDTO(CustomerValidationAtCreationService.java:29) ~[classes/:na]
 	at com.switchfully.eurder.service.validation.CustomerValidationAtCreationService.validateCustomer(CustomerValidationAtCreationService.java:14) ~[classes/:na]
-	at com.switchfully.eurder.service.CustomerService.registerNewCustomer(CustomerService.java:29) ~[classes/:na]
-	at com.switchfully.eurder.api.CustomerController.registerNewCustomer(CustomerController.java:31) ~[classes/:na]
+	at com.switchfully.eurder.service.UserService.registerNewCustomer(CustomerService.java:29) ~[classes/:na]
+	at com.switchfully.eurder.api.UserController.registerNewCustomer(CustomerController.java:31) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -76,8 +76,8 @@ java.lang.RuntimeException: null
 java.lang.RuntimeException: null
 	at com.switchfully.eurder.service.validation.CustomerValidationAtCreationService.validateCustomerDTO(CustomerValidationAtCreationService.java:29) ~[classes/:na]
 	at com.switchfully.eurder.service.validation.CustomerValidationAtCreationService.validateCustomer(CustomerValidationAtCreationService.java:14) ~[classes/:na]
-	at com.switchfully.eurder.service.CustomerService.registerNewCustomer(CustomerService.java:29) ~[classes/:na]
-	at com.switchfully.eurder.api.CustomerController.registerNewCustomer(CustomerController.java:31) ~[classes/:na]
+	at com.switchfully.eurder.service.UserService.registerNewCustomer(CustomerService.java:29) ~[classes/:na]
+	at com.switchfully.eurder.api.UserController.registerNewCustomer(CustomerController.java:31) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -185,3 +185,19 @@ java.lang.RuntimeException: null
 2023-03-29T10:18:27.375+02:00  INFO 11308 --- [http-nio-8080-exec-1] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
 2023-03-29T10:19:01.340+02:00  INFO 11308 --- [http-nio-8080-exec-9] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
 2023-03-29T10:19:17.091+02:00  INFO 11308 --- [http-nio-8080-exec-4] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T11:17:45.294+02:00  INFO 16964 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 16964 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-29T11:17:45.298+02:00  INFO 16964 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-29T11:17:46.612+02:00  INFO 16964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-29T11:17:46.623+02:00  INFO 16964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-29T11:17:46.624+02:00  INFO 16964 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29T11:17:46.759+02:00  INFO 16964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-29T11:17:46.760+02:00  INFO 16964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+2023-03-29T11:17:47.814+02:00  INFO 16964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-29T11:17:47.829+02:00  INFO 16964 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 3.064 seconds (process running for 3.896)
+2023-03-29T11:17:54.216+02:00  INFO 16964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29T11:17:54.216+02:00  INFO 16964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29T11:17:54.217+02:00  INFO 16964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-29T11:17:55.026+02:00  INFO 16964 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 272 ms
+2023-03-29T11:18:15.350+02:00  INFO 16964 --- [http-nio-8080-exec-7] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
+2023-03-29T11:18:20.855+02:00  INFO 16964 --- [http-nio-8080-exec-10] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
+2023-03-29T11:18:33.466+02:00  INFO 16964 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called

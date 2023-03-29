@@ -9,11 +9,11 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 @Component
-public class CustomerMapper {
+public class UserMapper {
 
     private AddressMapper addressMapper;
 
-    public CustomerMapper(AddressMapper addressMapper) {
+    public UserMapper(AddressMapper addressMapper) {
         this.addressMapper = addressMapper;
     }
 
