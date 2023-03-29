@@ -165,3 +165,23 @@ java.lang.RuntimeException: null
 2023-03-29T10:00:06.010+02:00  INFO 16716 --- [http-nio-8080-exec-3] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
 2023-03-29T10:00:12.532+02:00  INFO 16716 --- [http-nio-8080-exec-5] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
 2023-03-29T10:00:20.609+02:00  INFO 16716 --- [http-nio-8080-exec-4] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:16:33.769+02:00  INFO 11308 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 11308 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-29T10:16:33.772+02:00  INFO 11308 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-29T10:16:34.961+02:00  INFO 11308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-29T10:16:34.972+02:00  INFO 11308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-29T10:16:34.973+02:00  INFO 11308 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29T10:16:35.111+02:00  INFO 11308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-29T10:16:35.111+02:00  INFO 11308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1281 ms
+2023-03-29T10:16:36.099+02:00  INFO 11308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-29T10:16:36.111+02:00  INFO 11308 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.878 seconds (process running for 3.534)
+2023-03-29T10:16:45.875+02:00  INFO 11308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29T10:16:45.876+02:00  INFO 11308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29T10:16:45.877+02:00  INFO 11308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-29T10:16:46.668+02:00  INFO 11308 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 267 ms
+2023-03-29T10:17:05.804+02:00  INFO 11308 --- [http-nio-8080-exec-2] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:17:33.643+02:00  INFO 11308 --- [http-nio-8080-exec-5] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:17:46.032+02:00  INFO 11308 --- [http-nio-8080-exec-3] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:18:00.809+02:00  INFO 11308 --- [http-nio-8080-exec-10] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:18:27.375+02:00  INFO 11308 --- [http-nio-8080-exec-1] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:19:01.340+02:00  INFO 11308 --- [http-nio-8080-exec-9] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called
+2023-03-29T10:19:17.091+02:00  INFO 11308 --- [http-nio-8080-exec-4] c.s.eurder.api.CustomerController        : Handler method registerNewCustomer is called

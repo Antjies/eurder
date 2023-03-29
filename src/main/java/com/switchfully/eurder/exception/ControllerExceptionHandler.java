@@ -30,26 +30,6 @@ public class ControllerExceptionHandler {
         response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
     }
 
-    /*@ExceptionHandler(CustomerFirstNameIsEmpty.class)
-    protected void CustomerFirstNameIsEmpty(CustomerFirstNameIsEmpty ex, HttpServletResponse response) throws IOException {
-        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
-    }
-
-    @ExceptionHandler(CustomerLastNameIsEmpty.class)
-    protected void CustomerLastNameIsEmpty(CustomerLastNameIsEmpty ex, HttpServletResponse response) throws IOException {
-        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
-    }
-
-    @ExceptionHandler(CustomerEmailAddressDoesntMatchRequirement.class)
-    protected void CustomerEmailAddressDoesntMatchRequirement(CustomerEmailAddressDoesntMatchRequirement ex, HttpServletResponse response) throws IOException {
-        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
-    }
-
-    @ExceptionHandler(CustomerPhoneNumberDoesntMatchRequirement.class)
-    protected void CustomerPhoneNumberDoesntMatchRequirement(CustomerPhoneNumberDoesntMatchRequirement ex, HttpServletResponse response) throws IOException {
-        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
-    }*/
-
 
 
 }
