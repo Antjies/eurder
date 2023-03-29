@@ -12,19 +12,26 @@ import java.util.concurrent.ConcurrentHashMap;
 @Repository
 public class UserRepository {
 
-    private ConcurrentHashMap<String, User> customers = new ConcurrentHashMap<>();
+    private final UserCredentialsRepository userCredentialsRepository;
+    private ConcurrentHashMap<String, User> userDatabase;
+
+    public UserRepository(UserCredentialsRepository userCredentialsRepository) {
+        this.userCredentialsRepository = userCredentialsRepository;
+        userDatabase = new ConcurrentHashMap<>();
+        initializeDummyDatabase();
+    }
 
     public void addCustomer(Customer customer) {
-        customers.put(customer.getId(), customer);
+        userDatabase.put(customer.getId(), customer);
     }
 
     public void addAdmin(Admin admin) {
-        customers.put(admin.getId(), admin);
+        userDatabase.put(admin.getId(), admin);
     }
 
     public Customer getCustomerById(String id) {
         //check what happens when you try to get admin id?
-        return customers.values().stream()
+        return userDatabase.values().stream()
                 .filter(user -> user.getId().equals(id))
                 .filter(user -> user.getClass() == Customer.class)
                 .map(user -> (Customer) user)
@@ -33,16 +40,22 @@ public class UserRepository {
     }
 
     public Collection<Customer> getAllCustomers() {
-        return customers.values().stream()
+        return userDatabase.values().stream()
                 .filter(user -> user.getClass() == Customer.class)
                 .map(user ->(Customer) user)
                 .toList();
     }
 
     public Collection<Admin> getAllAdmins() {
-        return customers.values().stream()
+        return userDatabase.values().stream()
                 .filter(user -> user.getClass() == Admin.class)
                 .map(user ->(Admin) user)
                 .toList();
+    }
+
+    private void initializeDummyDatabase() {
+        Admin admin = new Admin("AdminFn", "AdminLn", "admin@admin.com");
+        userDatabase.put(admin.getId(), admin);
+        userCredentialsRepository.createCredentials("Basic YWRtaW46cHdk", admin);
     }
 }

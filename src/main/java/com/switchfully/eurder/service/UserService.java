@@ -4,10 +4,8 @@ import com.switchfully.eurder.domain.models.Admin;
 import com.switchfully.eurder.domain.models.UserCredentials;
 import com.switchfully.eurder.domain.repositories.UserCredentialsRepository;
 import com.switchfully.eurder.domain.repositories.UserRepository;
-import com.switchfully.eurder.service.dtos.AdminDTO;
-import com.switchfully.eurder.service.dtos.CreateAdminDTO;
-import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
-import com.switchfully.eurder.service.dtos.CustomerDTO;
+import com.switchfully.eurder.exception.exceptions.AuthorizationNotFilled;
+import com.switchfully.eurder.service.dtos.*;
 import com.switchfully.eurder.service.mappers.UserCredentialsMapper;
 import com.switchfully.eurder.service.mappers.UserMapper;
 import com.switchfully.eurder.service.validation.AdminValidationAtCreationService;
@@ -51,11 +49,6 @@ public class UserService {
         return userMapper.customerToCollectionDTO(userRepository.getAllCustomers());
     }
 
-    public void registerNewAdmin(CreateAdminDTO createAdminDTO) {
-        adminValidationAtCreationService.validateAdmin(createAdminDTO); // validation to create new admin
-        userRepository.addAdmin(userMapper.toAdminDomain(createAdminDTO));
-    }
-
     public Collection<AdminDTO> getAllAdmins() {
         return userMapper.adminToCollectionDTO(userRepository.getAllAdmins());
     }
@@ -67,4 +60,42 @@ public class UserService {
         userRepository.addAdmin(admin);
         userCredentialsRepository.addCredentials(adminCredentials, admin);
     }
+
+    private void validateAdminWrapper(AdminWrapper adminWrapper){
+        if(adminWrapper.getUserCredentials() == null || adminWrapper.getUser() == null){
+            throw new IllegalArgumentException("admin data and userCredentials data should be filled.");
+        }
+        validateUserCredentialsDTO(adminWrapper.getUserCredentials());
+        validateLastName(adminWrapper.getUser().getLastName());
+        validateMail(adminWrapper.getUser().getEmailAddress());
+    }
+
+    private void validateUserCredentialsDTO(UserCredentialsDTO userCredentialsDTO){
+        if(userCredentialsDTO.getUsername() == null || userCredentialsDTO.getPassword() == null){
+            throw new IllegalArgumentException(" should be filled.");
+        }
+    }
+
+    // adding a validation to check if the admin already exists
+
+    private void validateLastName(String lastName) {
+        if (lastName == null || lastName.isBlank()) {
+            throw new RuntimeException();
+        }
+    }
+
+    private void validateMail(String email) {
+        if (email == null || email.isBlank() || !(email.matches("^(.+)@(\\S+)$"))) {
+            throw new RuntimeException();
+        }
+    }
+
+    private static void validateAuthorization(String authorization) {
+        if (authorization == null) {
+            throw new AuthorizationNotFilled("The authorization is not filled in");
+        }
+    }
+
+
+
 }

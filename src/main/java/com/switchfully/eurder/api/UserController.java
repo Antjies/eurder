@@ -40,29 +40,32 @@ public class UserController {
     @GetMapping(produces = "application/json", value = "customers/{id}")
     @ResponseStatus(HttpStatus.OK)
     public CustomerDTO showCustomerById(@PathVariable String id) {
-        // ADMIN AUTHORIZATION
+        myLogger.info("Handler method showCustomerById is called");
+        //securityService.validateAuthorization(authorization, Feature.CAN_SEE_ALL_CUSTOMERS);
         return userService.getCustomerById(id);
     }
 
     @GetMapping(produces = "application/json", value = "customers")
     @ResponseStatus(HttpStatus.OK)
     public Collection<CustomerDTO> getAllCustomers(){
-        // ADMin AUTHORIZATION
+        myLogger.info("Handler method getAllCustomers is called");
+        //securityService.validateAuthorization(authorization, Feature.CAN_SEE_ALL_CUSTOMERS);
         return userService.getAllCustomers();
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json", value = "admins")
     public void createAdminWithRequestWrapper(@RequestBody AdminWrapper adminWrapper, @RequestHeader String authorization){
-        myLogger.info("Adding a New Admin to the Database.");
+        myLogger.info("Handler method createAdminWithRequestWrapper is called");
         securityService.validateAuthorization(authorization, Feature.CAN_CREATE_ADMIN);
         userService.createAdminWithRequestWrapper(adminWrapper);
     }
 
     @GetMapping(produces = "application/json", value = "admins")
     @ResponseStatus(HttpStatus.OK)
-    public Collection<AdminDTO> getAllAdmins(){
-        // ADMin AUTHORIZATION
+    public Collection<AdminDTO> getAllAdmins(@RequestHeader String authorization){
+        myLogger.info("Handler method getAllAdmins is called");
+        securityService.validateAuthorization(authorization, Feature.CAN_SEE_ALL_ADMINS);
         return userService.getAllAdmins();
     }
 
