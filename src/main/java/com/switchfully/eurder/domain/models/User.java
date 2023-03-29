@@ -1,5 +1,6 @@
 package com.switchfully.eurder.domain.models;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -9,7 +10,7 @@ public abstract class User {
     private final String firstName;
     private final String lastName;
     private String emailAddress;
-    //List<Feature> featureList;
+    List<Feature> featureList;
 
     public User(String firstName, String lastName, String emailAddress) {
         this.id = UUID.randomUUID().toString();
@@ -32,6 +33,10 @@ public abstract class User {
 
     public String getEmailAddress() {
         return emailAddress;
+    }
+
+    public boolean canHaveAccessTo(Feature feature) {
+        return featureList.contains(feature);
     }
 
     @Override

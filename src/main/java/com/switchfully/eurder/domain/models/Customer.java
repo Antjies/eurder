@@ -8,7 +8,7 @@ public class Customer extends User{
 
     public Customer(String firstName, String lastName, String emailAddress, Address address, String phoneNumber) {
         super(firstName, lastName, emailAddress);
-        //featureList = List.of(Feature.CAN_CREATE_MEMBER);
+        featureList = List.of(Feature.CAN_REGISTER, Feature.CAN_ORDER_ITEMS);
         this.address = address;
         this.phoneNumber = phoneNumber;
     }

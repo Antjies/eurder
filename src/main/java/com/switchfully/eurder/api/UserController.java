@@ -1,9 +1,13 @@
 package com.switchfully.eurder.api;
 
+import com.switchfully.eurder.domain.models.Feature;
 import com.switchfully.eurder.service.UserService;
 import com.switchfully.eurder.service.dtos.AdminDTO;
+import com.switchfully.eurder.service.dtos.CreateAdminDTO;
 import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
 import com.switchfully.eurder.service.dtos.CustomerDTO;
+import com.switchfully.eurder.service.SecurityService;
+import com.switchfully.eurder.service.wrappers.AdminWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +21,13 @@ import java.util.Collection;
 public class UserController {
 
     private final UserService userService;
+    private final SecurityService securityService;
     private final Logger myLogger = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
-    public UserController(UserService userService) {
+    public UserController(UserService userService, SecurityService securityService) {
         this.userService = userService;
+        this.securityService = securityService;
     }
 
     @PostMapping(consumes = "application/json", value = "customers")
@@ -47,11 +53,17 @@ public class UserController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json", value = "admins")
-    public void createAdminWithRequestWrapper(@RequestBody AdminDTO adminDTO, @RequestHeader String authorization){
+    public void createAdminWithRequestWrapper(@RequestBody AdminWrapper adminWrapper, @RequestHeader String authorization){
         myLogger.info("Adding a New Admin to the Database.");
-        // ADMIN AUTHORIZATION
-        //securityService.validateAuthorization(authorization, Feature.CAN_CREATE_ADMIN);
-        userService.registerNewAdmin(adminDTO);
+        securityService.validateAuthorization(authorization, Feature.CAN_CREATE_ADMIN);
+        userService.createAdminWithRequestWrapper(adminWrapper);
+    }
+
+    @GetMapping(produces = "application/json", value = "admins")
+    @ResponseStatus(HttpStatus.OK)
+    public Collection<AdminDTO> getAllAdmins(){
+        // ADMin AUTHORIZATION
+        return userService.getAllAdmins();
     }
 
 
