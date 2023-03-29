@@ -19,19 +19,13 @@ public class UserRepository {
     }
 
     public Customer getCustomerById(String id) {
+        //check what happens when you try to get admin id?
         return customers.values().stream()
                 .filter(user -> user.getId().equals(id))
                 .filter(user -> user.getClass() == Customer.class)
                 .map(user -> (Customer) user)
                 .findFirst()
                 .orElseThrow(() -> new CustomerNotFoundException("Customer with id " + id + " doesn't exist."));
-
-
-        /*User customer = customers.get(id);
-        if (customer == null) {
-            throw new CustomerNotFoundException("Customer with id " + id + " doesn't exist.");
-        }
-        return customer;*/
     }
 
     public Collection<Customer> getAllCustomers() {

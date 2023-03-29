@@ -1,6 +1,7 @@
 package com.switchfully.eurder.api;
 
 import com.switchfully.eurder.service.UserService;
+import com.switchfully.eurder.service.dtos.AdminDTO;
 import com.switchfully.eurder.service.dtos.CreateCustomerDTO;
 import com.switchfully.eurder.service.dtos.CustomerDTO;
 import org.slf4j.Logger;
@@ -42,6 +43,15 @@ public class UserController {
     public Collection<CustomerDTO> getAllCustomers(){
         // ADMin AUTHORIZATION
         return userService.getAllCustomers();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(consumes = "application/json", value = "admins")
+    public void createAdminWithRequestWrapper(@RequestBody AdminDTO adminDTO, @RequestHeader String authorization){
+        myLogger.info("Adding a New Admin to the Database.");
+        // ADMIN AUTHORIZATION
+        //securityService.validateAuthorization(authorization, Feature.CAN_CREATE_ADMIN);
+        userService.registerNewAdmin(adminDTO);
     }
 
 

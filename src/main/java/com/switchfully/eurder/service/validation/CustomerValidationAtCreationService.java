@@ -52,7 +52,7 @@ public class CustomerValidationAtCreationService {
         }
 
         if (createCustomerDTO.getPhoneNumber() == null || createCustomerDTO.getPhoneNumber().isBlank() || !(createCustomerDTO.getPhoneNumber().matches("^(((\\+|00)32[ ]?(?:\\(0\\)[ ]?)?)|0){1}(4(60|[789]\\d)\\/?(\\s?\\d{2}\\.?){2}(\\s?\\d{2})|(\\d\\/?\\s?\\d{3}|\\d{2}\\/?\\s?\\d{2})(\\.?\\s?\\d{2}){2})$"))) {
-            message += "Please add a valid email address   ";
+            message += "Please add a valid phone number   ";
             controlFactor = true;
         }
 

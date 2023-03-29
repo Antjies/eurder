@@ -30,6 +30,11 @@ public class ControllerExceptionHandler {
         response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
     }
 
+    @ExceptionHandler(ValidateAdminInput.class)
+    protected void ValidateAdminInput(ValidateAdminInput ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }
+
 
 
 }
