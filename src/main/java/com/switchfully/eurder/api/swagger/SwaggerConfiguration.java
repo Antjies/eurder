@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@SecurityScheme(type = SecuritySchemeType.HTTP)
+@SecurityScheme(type = SecuritySchemeType.HTTP, scheme = "basic", name = "basicAuth") //basicAuth -> zie controller
 public class SwaggerConfiguration {
     @Bean
     public OpenAPI springShopOpenAPI() {
