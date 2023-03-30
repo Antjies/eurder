@@ -91,9 +91,9 @@ As a customer I want to order one or more items.
     - The shipping date should be calculated automatically:
         - When we have the item in stock, the shipping date is set to the next day (of the order)
         - Otherwise the shipping date should be set to next week (day of order + 7 days)
-- The total price should be calculated and shown to the customer when ordering.
+- The total priceDTO should be calculated and shown to the customer when ordering.
 - Question: should an order keep a reference to an item or should it make some sort of copy?
-    - Tip: The the price of the item can change over time... What implications might this have?
+    - Tip: The the priceDTO of the item can change over time... What implications might this have?
 - Obviously, we also need to keep track of who made the order (it has to be a known customer)
 
 ### Story 4: Update an item
@@ -111,15 +111,15 @@ As a customer I want to see a report of all my orders so I can get an overview o
     - Per item group of the order
         - The name of the item
         - The ordered amount 
-        - The total price of the item group
-    - The total price of the order
-- The total price of all orders
+        - The total priceDTO of the item group
+    - The total priceDTO of the order
+- The total priceDTO of all orders
 
 ### Story 6: Reorder an existing order 
 As a customer I want to be able to reorder an existing order so I can quickly place a recurring order.
 - Make sure this can be done by providing an order id(entifier).
 - A customer can only reorder one of his own orders.
-- The actual price of the item should be used, not the price the item had in the existing order.
+- The actual priceDTO of the item should be used, not the priceDTO the item had in the existing order.
 
 ### Story 7: View all customers
 As an admin user I want to view all customers.

@@ -54,7 +54,7 @@ public class UserController {
     @GetMapping(produces = "application/json", value = "customers")
     @ResponseStatus(HttpStatus.OK)
     @Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
-    public Collection<CustomerDTO> getAllCustomers(@RequestHeader String authorization){
+    public Collection<CustomerDTO> getAllCustomers(@RequestHeader String authorization) {
         myLogger.info("Handler method getAllCustomers is called");
         securityService.validateAuthorization(authorization, Feature.CAN_SEE_ALL_CUSTOMERS);
         return userService.getAllCustomers();
@@ -65,7 +65,7 @@ public class UserController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json", value = "admins")
     @Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
-    public void createAdminWithRequestWrapper(@RequestBody AdminWrapper adminWrapper, @RequestHeader String authorization){
+    public void createAdminWithRequestWrapper(@RequestBody AdminWrapper adminWrapper, @RequestHeader String authorization) {
         myLogger.info("Handler method createAdminWithRequestWrapper is called");
         securityService.validateAuthorization(authorization, Feature.CAN_CREATE_ADMIN);
         userService.createAdminWithRequestWrapper(adminWrapper);
@@ -74,12 +74,11 @@ public class UserController {
     @GetMapping(produces = "application/json", value = "admins")
     @ResponseStatus(HttpStatus.OK)
     @Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
-    public Collection<AdminDTO> getAllAdmins(@RequestHeader String authorization){
+    public Collection<AdminDTO> getAllAdmins(@RequestHeader String authorization) {
         myLogger.info("Handler method getAllAdmins is called");
         securityService.validateAuthorization(authorization, Feature.CAN_SEE_ALL_ADMINS);
         return userService.getAllAdmins();
     }
-
 
 
 }

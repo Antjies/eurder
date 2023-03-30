@@ -35,10 +35,16 @@ public class ControllerExceptionHandler {
         response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
     }
 
+    @ExceptionHandler(ValidateItemInput.class)
+    protected void ValidateItemInput(ValidateItemInput ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());
+    }
+
     @ExceptionHandler(UnauthorizedAccessException.class)
     protected void unauthorizedAccessException(UnauthorizedAccessException ex, HttpServletResponse response) throws IOException {
         response.sendError(HttpStatus.FORBIDDEN.value(), ex.getMessage());
     }
+
 
     /*@ExceptionHandler(AuthorizationNotFilled.class)
     protected void authorizationNotFilled(AuthorizationNotFilled ex, HttpServletResponse response) throws IOException {

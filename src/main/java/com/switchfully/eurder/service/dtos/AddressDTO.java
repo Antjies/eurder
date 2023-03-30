@@ -1,12 +1,9 @@
 package com.switchfully.eurder.service.dtos;
 
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-
 public class AddressDTO{
 
-    @NotNull
-    @NotEmpty
+    //@NotNull
+    //@NotEmpty
     private String streetName;
     private String number;
     private String postalCode;
