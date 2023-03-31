@@ -52,7 +52,7 @@ public class ItemController {
     //View all Items -> You don't have to register to see our products!
     @GetMapping(produces = "application/json")
     @ResponseStatus(HttpStatus.OK)
-    public Collection<CreateItemDTO> getAllItems() {
+    public Collection<ItemDTO> getAllItems() {
         myLogger.info("Handler method getAllItems is called");
         return itemService.getAllItems();
     }

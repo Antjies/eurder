@@ -2,13 +2,13 @@ package com.switchfully.eurder.aapreperation;
 
 import java.time.LocalDate;
 
-public class ItemGroup {
+public class ItemGroupDTO {
 
     private final String itemId;
     private final int amount;
     private LocalDate shippingDate;
 
-    public ItemGroup(String itemId, int amount) {
+    public ItemGroupDTO(String itemId, int amount) {
         this.itemId = itemId;
         this.amount = amount;
     }

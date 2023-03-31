@@ -2,6 +2,7 @@ package com.switchfully.eurder.service.mappers;
 
 import com.switchfully.eurder.domain.models.Item;
 import com.switchfully.eurder.service.dtos.CreateItemDTO;
+import com.switchfully.eurder.service.dtos.ItemDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -31,9 +32,18 @@ public class ItemMapper {
                 .setAmountInStock(item.getAmountInStock());
     }
 
-    public Collection<CreateItemDTO> toCollectionDTO(Collection<Item> allItems){
+    public ItemDTO toItemDTO(Item item){
+        return new ItemDTO()
+                .setId(item.getId())
+                .setName(item.getName())
+                .setDescription(item.getDescription())
+                .setPrice(priceMapper.toDTO(item.getPrice()))
+                .setAmountInStock(item.getAmountInStock());
+    }
+
+    public Collection<ItemDTO> toCollectionDTO(Collection<Item> allItems){
         return allItems.stream()
-                .map(f -> toDTO(f))
+                .map(f -> toItemDTO(f))
                 .collect(Collectors.toList());
     }
 

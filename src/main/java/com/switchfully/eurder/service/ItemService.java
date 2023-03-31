@@ -31,7 +31,7 @@ public class ItemService {
         itemRepository.addNewItem(newItem);
     }
 
-    public Collection<CreateItemDTO> getAllItems() {
+    public Collection<ItemDTO> getAllItems() {
         return itemMapper.toCollectionDTO(itemRepository.getAllItems());
     }
 

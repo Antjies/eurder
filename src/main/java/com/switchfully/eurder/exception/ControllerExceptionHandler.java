@@ -20,6 +20,11 @@ public class ControllerExceptionHandler {
         response.sendError(HttpStatus.NOT_FOUND.value(), ex.getMessage());
     }
 
+    @ExceptionHandler(ItemNotFoundException.class)
+    protected void ItemNotFoundException(ItemNotFoundException ex, HttpServletResponse response) throws IOException {
+        response.sendError(HttpStatus.NOT_FOUND.value(), ex.getMessage());
+    }
+
     @ExceptionHandler(CustomerEmailAddressAlreadyExists.class)
     protected void CustomerEmailAddressAlreadyExists(CustomerEmailAddressAlreadyExists ex, HttpServletResponse response) throws IOException {
         response.sendError(HttpStatus.BAD_REQUEST.value(), ex.getMessage());

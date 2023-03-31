@@ -1,275 +1,200 @@
-2023-03-30T09:27:23.454+02:00  INFO 18740 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 18740 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T09:27:23.463+02:00  INFO 18740 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T09:27:24.419+02:00  INFO 18740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T09:27:24.430+02:00  INFO 18740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T09:27:24.430+02:00  INFO 18740 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T09:27:24.555+02:00  INFO 18740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T09:27:24.555+02:00  INFO 18740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
-2023-03-30T09:27:25.314+02:00  INFO 18740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T09:27:25.323+02:00  INFO 18740 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.276 seconds (process running for 2.874)
-2023-03-30T09:27:33.238+02:00  INFO 18740 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T09:27:33.239+02:00  INFO 18740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T09:27:33.240+02:00  INFO 18740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T09:27:33.621+02:00  INFO 18740 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 196 ms
-2023-03-30T09:27:53.423+02:00  INFO 18740 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method getAllCustomers is called
-2023-03-30T09:27:55.693+02:00  INFO 18740 --- [http-nio-8080-exec-4] c.switchfully.eurder.api.UserController  : Handler method getAllCustomers is called
-2023-03-30T09:32:00.887+02:00  INFO 6344 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 6344 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T09:32:00.890+02:00  INFO 6344 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T09:32:01.626+02:00  INFO 6344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T09:32:01.634+02:00  INFO 6344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T09:32:01.634+02:00  INFO 6344 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T09:32:01.705+02:00  INFO 6344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T09:32:01.705+02:00  INFO 6344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 780 ms
-2023-03-30T09:32:02.321+02:00  INFO 6344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T09:32:02.328+02:00  INFO 6344 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.779 seconds (process running for 2.21)
-2023-03-30T09:32:26.820+02:00  INFO 6344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T09:32:26.821+02:00  INFO 6344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T09:32:26.821+02:00  INFO 6344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-03-30T09:32:27.418+02:00  INFO 6344 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 200 ms
-2023-03-30T10:04:38.639+02:00  INFO 6344 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
-2023-03-30T10:42:57.462+02:00  INFO 5144 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 5144 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T10:42:57.464+02:00  INFO 5144 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T10:42:58.347+02:00  INFO 5144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T10:42:58.355+02:00  INFO 5144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T10:42:58.355+02:00  INFO 5144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T10:42:58.428+02:00  INFO 5144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T10:42:58.428+02:00  INFO 5144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 931 ms
-2023-03-30T10:42:59.016+02:00  INFO 5144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T10:42:59.024+02:00  INFO 5144 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.849 seconds (process running for 3.821)
-2023-03-30T10:43:05.853+02:00  INFO 5144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T10:43:05.854+02:00  INFO 5144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T10:43:05.855+02:00  INFO 5144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T10:43:06.412+02:00  INFO 5144 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 193 ms
-2023-03-30T10:43:26.919+02:00  INFO 5144 --- [http-nio-8080-exec-2] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
-2023-03-30T10:45:23.514+02:00  WARN 5144 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:46:13.242+02:00  WARN 5144 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:46:21.929+02:00  WARN 5144 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:46:29.169+02:00  WARN 5144 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:47:25.586+02:00  INFO 5144 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method createAdminWithRequestWrapper is called
-2023-03-30T10:47:34.913+02:00  INFO 5144 --- [http-nio-8080-exec-6] c.switchfully.eurder.api.UserController  : Handler method getAllAdmins is called
-2023-03-30T10:49:47.823+02:00  WARN 5144 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:49:54.890+02:00  WARN 5144 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:50:25.196+02:00  WARN 5144 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:52:34.871+02:00  WARN 5144 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T10:56:36.480+02:00  INFO 1768 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 1768 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T10:56:36.482+02:00  INFO 1768 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T10:56:37.185+02:00  INFO 1768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T10:56:37.194+02:00  INFO 1768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T10:56:37.194+02:00  INFO 1768 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T10:56:37.267+02:00  INFO 1768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T10:56:37.268+02:00  INFO 1768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms
-2023-03-30T10:56:37.846+02:00  INFO 1768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T10:56:37.853+02:00  INFO 1768 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.686 seconds (process running for 2.137)
-2023-03-30T10:57:29.499+02:00  INFO 1768 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T10:57:29.500+02:00  INFO 1768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T10:57:29.501+02:00  INFO 1768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T10:57:29.567+02:00  INFO 1768 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method createAdminWithRequestWrapper is called
-2023-03-30T10:57:29.569+02:00 ERROR 1768 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
-
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
-	at com.switchfully.eurder.domain.repositories.UserCredentialsRepository.getUserCredentials(UserCredentialsRepository.java:26) ~[classes/:na]
-	at com.switchfully.eurder.service.SecurityService.validateAuthorization(SecurityService.java:30) ~[classes/:na]
-	at com.switchfully.eurder.api.UserController.createAdminWithRequestWrapper(UserController.java:66) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563) ~[tomcat-embed-core-10.1.7.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.7.jar:6.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631) ~[tomcat-embed-core-10.1.7.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2023-03-30T10:57:54.096+02:00  INFO 3136 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 3136 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T10:57:54.098+02:00  INFO 3136 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T10:57:54.785+02:00  INFO 3136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T10:57:54.792+02:00  INFO 3136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T10:57:54.792+02:00  INFO 3136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T10:57:54.861+02:00  INFO 3136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T10:57:54.861+02:00  INFO 3136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
-2023-03-30T10:57:55.433+02:00  INFO 3136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T10:57:55.440+02:00  INFO 3136 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.66 seconds (process running for 2.109)
-2023-03-30T11:02:12.461+02:00  INFO 3336 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 3336 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T11:02:12.463+02:00  INFO 3336 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T11:02:13.151+02:00  INFO 3336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T11:02:13.158+02:00  INFO 3336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T11:02:13.158+02:00  INFO 3336 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T11:02:13.225+02:00  INFO 3336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T11:02:13.226+02:00  INFO 3336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
-2023-03-30T11:02:13.814+02:00  INFO 3336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T11:02:13.823+02:00  INFO 3336 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.712 seconds (process running for 2.146)
-2023-03-30T11:02:44.176+02:00  INFO 3336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T11:02:44.176+02:00  INFO 3336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T11:02:44.177+02:00  INFO 3336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T11:02:44.702+02:00  INFO 3336 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 183 ms
-2023-03-30T11:03:29.536+02:00  WARN 3336 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T11:03:32.986+02:00  WARN 3336 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T11:03:39.230+02:00  WARN 3336 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T11:03:52.122+02:00  INFO 3336 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method createAdminWithRequestWrapper is called
-2023-03-30T11:09:52.586+02:00  INFO 17380 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 17380 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T11:09:52.589+02:00  INFO 17380 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T11:09:53.394+02:00  INFO 17380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T11:09:53.402+02:00  INFO 17380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T11:09:53.402+02:00  INFO 17380 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T11:09:53.477+02:00  INFO 17380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T11:09:53.478+02:00  INFO 17380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
-2023-03-30T11:09:54.122+02:00  INFO 17380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T11:09:54.129+02:00  INFO 17380 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.88 seconds (process running for 2.331)
-2023-03-30T11:09:54.422+02:00  INFO 17380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T11:09:54.422+02:00  INFO 17380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T11:09:54.423+02:00  INFO 17380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-03-30T11:09:55.073+02:00  INFO 17380 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 214 ms
-2023-03-30T11:16:10.015+02:00  INFO 14944 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 14944 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T11:16:10.018+02:00  INFO 14944 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T11:16:10.858+02:00  INFO 14944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T11:16:10.866+02:00  INFO 14944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T11:16:10.867+02:00  INFO 14944 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T11:16:10.992+02:00  INFO 14944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T11:16:10.992+02:00  INFO 14944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 932 ms
-2023-03-30T11:16:11.623+02:00  INFO 14944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T11:16:11.629+02:00  INFO 14944 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.0 seconds (process running for 2.499)
-2023-03-30T11:16:14.185+02:00  INFO 14944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T11:16:14.185+02:00  INFO 14944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T11:16:14.186+02:00  INFO 14944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T11:16:14.800+02:00  INFO 14944 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 221 ms
-2023-03-30T11:18:01.447+02:00  INFO 14944 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method getAllAdmins is called
-2023-03-30T14:50:08.932+02:00  INFO 5608 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 5608 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T14:50:08.935+02:00  INFO 5608 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T14:50:09.723+02:00  INFO 5608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T14:50:09.730+02:00  INFO 5608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T14:50:09.730+02:00  INFO 5608 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T14:50:09.801+02:00  INFO 5608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T14:50:09.801+02:00  INFO 5608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 833 ms
-2023-03-30T14:50:10.383+02:00  INFO 5608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T14:50:10.390+02:00  INFO 5608 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.764 seconds (process running for 2.159)
-2023-03-30T14:50:21.673+02:00  INFO 5608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T14:50:21.674+02:00  INFO 5608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T14:50:21.675+02:00  INFO 5608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T14:50:22.208+02:00  INFO 5608 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 203 ms
-2023-03-30T14:52:25.265+02:00  INFO 5608 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:52:44.752+02:00  INFO 5608 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:53:26.298+02:00  INFO 5608 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:53:39.829+02:00  INFO 5608 --- [http-nio-8080-exec-10] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:53:45.505+02:00  WARN 5608 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
-2023-03-30T14:53:57.318+02:00  INFO 5608 --- [http-nio-8080-exec-2] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:55:46.769+02:00  INFO 19640 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 19640 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T14:55:46.773+02:00  INFO 19640 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T14:55:47.475+02:00  INFO 19640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T14:55:47.482+02:00  INFO 19640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T14:55:47.482+02:00  INFO 19640 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T14:55:47.548+02:00  INFO 19640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T14:55:47.549+02:00  INFO 19640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
-2023-03-30T14:55:48.127+02:00  INFO 19640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T14:55:48.134+02:00  INFO 19640 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.67 seconds (process running for 2.058)
-2023-03-30T14:56:12.586+02:00  INFO 19640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T14:56:12.586+02:00  INFO 19640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T14:56:12.587+02:00  INFO 19640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-03-30T14:56:13.099+02:00  INFO 19640 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 194 ms
-2023-03-30T14:56:24.218+02:00  WARN 19640 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'authorization' for method parameter type String is not present]
-2023-03-30T14:57:14.095+02:00  WARN 19640 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
-2023-03-30T14:57:21.321+02:00  INFO 19640 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:57:30.014+02:00  INFO 19640 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:57:33.418+02:00  INFO 19640 --- [http-nio-8080-exec-10] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:57:42.124+02:00  INFO 19640 --- [http-nio-8080-exec-4] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T14:58:10.654+02:00  INFO 18096 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 18096 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T14:58:10.656+02:00  INFO 18096 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T14:58:11.353+02:00  INFO 18096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T14:58:11.360+02:00  INFO 18096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T14:58:11.360+02:00  INFO 18096 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T14:58:11.431+02:00  INFO 18096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T14:58:11.432+02:00  INFO 18096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
-2023-03-30T14:58:12.001+02:00  INFO 18096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T14:58:12.007+02:00  INFO 18096 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.679 seconds (process running for 2.075)
-2023-03-30T14:58:26.556+02:00  INFO 18096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T14:58:26.556+02:00  INFO 18096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T14:58:26.557+02:00  INFO 18096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T14:58:27.059+02:00  INFO 18096 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 189 ms
-2023-03-30T14:58:52.455+02:00  WARN 18096 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.switchfully.eurder.domain.models.Currency` value (but could if coercion was enabled using `CoercionConfig`)]
-2023-03-30T15:02:12.729+02:00  INFO 17388 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 17388 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T15:02:12.732+02:00  INFO 17388 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T15:02:13.451+02:00  INFO 17388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T15:02:13.458+02:00  INFO 17388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T15:02:13.459+02:00  INFO 17388 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T15:02:13.528+02:00  INFO 17388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T15:02:13.528+02:00  INFO 17388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
-2023-03-30T15:02:14.110+02:00  INFO 17388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T15:02:14.118+02:00  INFO 17388 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.716 seconds (process running for 2.123)
-2023-03-30T15:02:35.410+02:00  INFO 17388 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T15:02:35.410+02:00  INFO 17388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T15:02:35.411+02:00  INFO 17388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-03-30T15:02:35.941+02:00  INFO 17388 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 200 ms
-2023-03-30T15:02:58.228+02:00  WARN 17388 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.switchfully.eurder.domain.models.Currency` from String "Euo": not one of the values accepted for Enum class: [Euro]]
-2023-03-30T15:04:04.564+02:00  WARN 17388 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.switchfully.eurder.domain.models.Currency` value (but could if coercion was enabled using `CoercionConfig`)]
-2023-03-30T15:04:18.573+02:00  INFO 17388 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T15:05:12.340+02:00  INFO 10708 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 10708 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T15:05:12.343+02:00  INFO 10708 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T15:05:13.093+02:00  INFO 10708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T15:05:13.101+02:00  INFO 10708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T15:05:13.101+02:00  INFO 10708 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T15:05:13.171+02:00  INFO 10708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T15:05:13.172+02:00  INFO 10708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
-2023-03-30T15:05:13.762+02:00  INFO 10708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T15:05:13.770+02:00  INFO 10708 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.768 seconds (process running for 2.195)
-2023-03-30T15:05:25.308+02:00  INFO 10708 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T15:05:25.308+02:00  INFO 10708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T15:05:25.309+02:00  INFO 10708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-30T15:05:25.841+02:00  INFO 10708 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 209 ms
-2023-03-30T15:05:53.568+02:00  WARN 10708 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.switchfully.eurder.domain.models.Currency` value (but could if coercion was enabled using `CoercionConfig`)]
-2023-03-30T17:56:04.824+02:00  INFO 16364 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 16364 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
-2023-03-30T17:56:04.826+02:00  INFO 16364 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30T17:56:05.669+02:00  INFO 16364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-30T17:56:05.676+02:00  INFO 16364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30T17:56:05.676+02:00  INFO 16364 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-03-30T17:56:05.745+02:00  INFO 16364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30T17:56:05.745+02:00  INFO 16364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 887 ms
-2023-03-30T17:56:06.280+02:00  INFO 16364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-30T17:56:06.287+02:00  INFO 16364 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.766 seconds (process running for 2.192)
-2023-03-30T17:56:23.081+02:00  INFO 16364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-30T17:56:23.081+02:00  INFO 16364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-30T17:56:23.082+02:00  INFO 16364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-03-30T17:56:23.630+02:00  INFO 16364 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 201 ms
-2023-03-30T17:57:12.651+02:00  INFO 16364 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
-2023-03-30T17:58:03.552+02:00  INFO 16364 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method getAllItems is called
-2023-03-30T17:58:29.768+02:00  INFO 16364 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method getAllItems is called
+2023-03-31T10:56:27.175+02:00  INFO 11676 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 11676 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T10:56:27.183+02:00  INFO 11676 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T10:56:28.187+02:00  INFO 11676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T10:56:28.195+02:00  INFO 11676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T10:56:28.195+02:00  INFO 11676 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T10:56:28.268+02:00  INFO 11676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T10:56:28.268+02:00  INFO 11676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1050 ms
+2023-03-31T10:56:28.895+02:00  INFO 11676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T10:56:28.902+02:00  INFO 11676 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.066 seconds (process running for 2.641)
+2023-03-31T10:56:37.876+02:00  INFO 11676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T10:56:37.876+02:00  INFO 11676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T10:56:37.877+02:00  INFO 11676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T10:56:38.277+02:00  INFO 11676 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 226 ms
+2023-03-31T11:02:55.345+02:00  INFO 21172 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 21172 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:02:55.348+02:00  INFO 21172 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:02:56.079+02:00  INFO 21172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:02:56.087+02:00  INFO 21172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:02:56.087+02:00  INFO 21172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:02:56.154+02:00  INFO 21172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:02:56.154+02:00  INFO 21172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 774 ms
+2023-03-31T11:02:56.733+02:00  INFO 21172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:02:56.740+02:00  INFO 21172 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.732 seconds (process running for 2.132)
+2023-03-31T11:03:08.454+02:00  INFO 21172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:03:08.455+02:00  INFO 21172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:03:08.455+02:00  INFO 21172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-31T11:03:09.015+02:00  INFO 21172 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 212 ms
+2023-03-31T11:06:34.073+02:00  INFO 4344 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 4344 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:06:34.076+02:00  INFO 4344 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:06:34.794+02:00  INFO 4344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:06:34.801+02:00  INFO 4344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:06:34.801+02:00  INFO 4344 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:06:34.868+02:00  INFO 4344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:06:34.869+02:00  INFO 4344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2023-03-31T11:06:35.426+02:00  INFO 4344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:06:35.433+02:00  INFO 4344 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.661 seconds (process running for 2.056)
+2023-03-31T11:06:40.301+02:00  INFO 4344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:06:40.301+02:00  INFO 4344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:06:40.302+02:00  INFO 4344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T11:06:40.817+02:00  INFO 4344 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 208 ms
+2023-03-31T11:07:59.492+02:00  INFO 20932 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 20932 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:07:59.495+02:00  INFO 20932 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:08:00.212+02:00  INFO 20932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:08:00.219+02:00  INFO 20932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:08:00.220+02:00  INFO 20932 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:08:00.288+02:00  INFO 20932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:08:00.288+02:00  INFO 20932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2023-03-31T11:08:00.858+02:00  INFO 20932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:08:00.864+02:00  INFO 20932 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.679 seconds (process running for 2.089)
+2023-03-31T11:08:08.467+02:00  INFO 20932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:08:08.468+02:00  INFO 20932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:08:08.469+02:00  INFO 20932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T11:08:09.078+02:00  INFO 20932 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 247 ms
+2023-03-31T11:34:47.781+02:00  INFO 16252 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 16252 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:34:47.784+02:00  INFO 16252 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:34:48.512+02:00  INFO 16252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:34:48.519+02:00  INFO 16252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:34:48.520+02:00  INFO 16252 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:34:48.587+02:00  INFO 16252 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:34:48.588+02:00  INFO 16252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 772 ms
+2023-03-31T11:34:49.135+02:00  INFO 16252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:34:49.142+02:00  INFO 16252 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.671 seconds (process running for 2.09)
+2023-03-31T11:34:54.151+02:00  INFO 16252 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:34:54.151+02:00  INFO 16252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:34:54.152+02:00  INFO 16252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T11:34:54.679+02:00  INFO 16252 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 212 ms
+2023-03-31T11:35:01.967+02:00  INFO 16252 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:35:59.249+02:00  INFO 9708 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 9708 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:35:59.252+02:00  INFO 9708 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:36:00.038+02:00  INFO 9708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:36:00.046+02:00  INFO 9708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:36:00.046+02:00  INFO 9708 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:36:00.124+02:00  INFO 9708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:36:00.124+02:00  INFO 9708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2023-03-31T11:36:00.814+02:00  INFO 9708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:36:00.822+02:00  INFO 9708 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.891 seconds (process running for 2.305)
+2023-03-31T11:36:01.338+02:00  INFO 9708 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:36:01.338+02:00  INFO 9708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:36:01.339+02:00  INFO 9708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T11:36:01.874+02:00  INFO 9708 --- [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 210 ms
+2023-03-31T11:36:09.361+02:00  INFO 9708 --- [http-nio-8080-exec-7] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:36:17.436+02:00  INFO 9708 --- [http-nio-8080-exec-10] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:36:27.715+02:00  INFO 9708 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:36:43.128+02:00  INFO 9708 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:36:59.864+02:00  INFO 9708 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:37:06.265+02:00  INFO 9708 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:37:16.747+02:00  INFO 9708 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:37:25.618+02:00  INFO 9708 --- [http-nio-8080-exec-6] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:40:10.219+02:00  INFO 15116 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 15116 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:40:10.222+02:00  INFO 15116 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:40:10.934+02:00  INFO 15116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:40:10.941+02:00  INFO 15116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:40:10.941+02:00  INFO 15116 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:40:11.009+02:00  INFO 15116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:40:11.010+02:00  INFO 15116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 756 ms
+2023-03-31T11:40:11.577+02:00  INFO 15116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:40:11.583+02:00  INFO 15116 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.672 seconds (process running for 2.052)
+2023-03-31T11:40:20.193+02:00  INFO 15116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:40:20.194+02:00  INFO 15116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:40:20.195+02:00  INFO 15116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-31T11:40:20.266+02:00  INFO 15116 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:40:27.207+02:00  INFO 15116 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 179 ms
+2023-03-31T11:40:33.625+02:00  INFO 15116 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:41:03.918+02:00  INFO 22172 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 22172 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:41:03.921+02:00  INFO 22172 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:41:04.607+02:00  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:41:04.613+02:00  INFO 22172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:41:04.614+02:00  INFO 22172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:41:04.680+02:00  INFO 22172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:41:04.680+02:00  INFO 22172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2023-03-31T11:41:05.223+02:00  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:41:05.230+02:00  INFO 22172 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.625 seconds (process running for 1.995)
+2023-03-31T11:41:14.160+02:00  INFO 22172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:41:14.160+02:00  INFO 22172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:41:14.161+02:00  INFO 22172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T11:41:14.669+02:00  INFO 22172 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 205 ms
+2023-03-31T11:41:23.444+02:00  INFO 22172 --- [http-nio-8080-exec-2] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:41:35.032+02:00  INFO 22172 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:41:42.518+02:00  INFO 22172 --- [http-nio-8080-exec-4] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:41:48.211+02:00  INFO 22172 --- [http-nio-8080-exec-6] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:42:17.918+02:00  INFO 11504 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 11504 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:42:17.921+02:00  INFO 11504 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:42:18.620+02:00  INFO 11504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:42:18.627+02:00  INFO 11504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:42:18.627+02:00  INFO 11504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:42:18.694+02:00  INFO 11504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:42:18.695+02:00  INFO 11504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2023-03-31T11:42:19.262+02:00  INFO 11504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:42:19.269+02:00  INFO 11504 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.664 seconds (process running for 2.067)
+2023-03-31T11:42:24.721+02:00  INFO 11504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:42:24.722+02:00  INFO 11504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:42:24.723+02:00  INFO 11504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T11:42:25.237+02:00  INFO 11504 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 207 ms
+2023-03-31T11:42:28.717+02:00  INFO 11504 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:42:32.746+02:00  INFO 11504 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T11:42:50.514+02:00  INFO 15536 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 15536 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T11:42:50.517+02:00  INFO 15536 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T11:42:51.215+02:00  INFO 15536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T11:42:51.223+02:00  INFO 15536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T11:42:51.223+02:00  INFO 15536 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T11:42:51.289+02:00  INFO 15536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T11:42:51.290+02:00  INFO 15536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
+2023-03-31T11:42:51.841+02:00  INFO 15536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T11:42:51.848+02:00  INFO 15536 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.636 seconds (process running for 2.023)
+2023-03-31T11:43:00.867+02:00  INFO 15536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T11:43:00.868+02:00  INFO 15536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T11:43:00.868+02:00  INFO 15536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-31T11:43:01.402+02:00  INFO 15536 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 215 ms
+2023-03-31T11:43:05.694+02:00  INFO 15536 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:27:26.072+02:00  INFO 10488 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 10488 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T13:27:26.075+02:00  INFO 10488 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T13:27:27.155+02:00  INFO 10488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T13:27:27.164+02:00  INFO 10488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T13:27:27.165+02:00  INFO 10488 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T13:27:27.316+02:00  INFO 10488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T13:27:27.316+02:00  INFO 10488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1206 ms
+2023-03-31T13:27:27.998+02:00  INFO 10488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T13:27:28.005+02:00  INFO 10488 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.246 seconds (process running for 2.771)
+2023-03-31T13:27:30.631+02:00  INFO 10488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T13:27:30.632+02:00  INFO 10488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T13:27:30.632+02:00  INFO 10488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-31T13:27:31.143+02:00  INFO 10488 --- [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 210 ms
+2023-03-31T13:28:01.013+02:00  INFO 10488 --- [http-nio-8080-exec-4] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:28:10.289+02:00  INFO 10488 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:28:22.696+02:00  WARN 10488 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
+2023-03-31T13:28:27.378+02:00  INFO 10488 --- [http-nio-8080-exec-2] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:28:33.382+02:00  INFO 10488 --- [http-nio-8080-exec-6] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:30:56.289+02:00  INFO 18996 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 18996 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T13:30:56.291+02:00  INFO 18996 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T13:30:56.988+02:00  INFO 18996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T13:30:56.995+02:00  INFO 18996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T13:30:56.996+02:00  INFO 18996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T13:30:57.065+02:00  INFO 18996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T13:30:57.065+02:00  INFO 18996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
+2023-03-31T13:30:57.635+02:00  INFO 18996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T13:30:57.642+02:00  INFO 18996 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.675 seconds (process running for 2.059)
+2023-03-31T13:31:04.229+02:00  INFO 18996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T13:31:04.230+02:00  INFO 18996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T13:31:04.231+02:00  INFO 18996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T13:31:04.772+02:00  INFO 18996 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 208 ms
+2023-03-31T13:33:22.278+02:00  INFO 18996 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
+2023-03-31T13:33:28.454+02:00  INFO 18996 --- [http-nio-8080-exec-7] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
+2023-03-31T13:33:55.128+02:00  INFO 18996 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method getAllCustomers is called
+2023-03-31T13:34:41.843+02:00  INFO 18996 --- [http-nio-8080-exec-10] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
+2023-03-31T13:34:54.580+02:00  INFO 18996 --- [http-nio-8080-exec-2] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
+2023-03-31T13:35:14.520+02:00  INFO 18996 --- [http-nio-8080-exec-6] c.switchfully.eurder.api.UserController  : Handler method getAllItems is called
+2023-03-31T13:35:31.097+02:00  INFO 18996 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:35:38.831+02:00  INFO 18996 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T13:48:08.714+02:00  INFO 18764 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 18764 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T13:48:08.717+02:00  INFO 18764 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T13:48:09.442+02:00  INFO 18764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T13:48:09.449+02:00  INFO 18764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T13:48:09.449+02:00  INFO 18764 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T13:48:09.517+02:00  INFO 18764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T13:48:09.518+02:00  INFO 18764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+2023-03-31T13:48:10.089+02:00  INFO 18764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T13:48:10.096+02:00  INFO 18764 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.699 seconds (process running for 2.089)
+2023-03-31T13:48:18.712+02:00  INFO 18764 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T13:48:18.712+02:00  INFO 18764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T13:48:18.713+02:00  INFO 18764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-31T13:48:19.312+02:00  INFO 18764 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 218 ms
