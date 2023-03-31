@@ -25,8 +25,6 @@ public class ItemService {
     }
 
 
-
-
     public void addNewItem(CreateItemDTO createItemDTO) {
         validateItemDTO(createItemDTO);
         Item newItem = itemMapper.toDomain(createItemDTO);
@@ -40,6 +38,8 @@ public class ItemService {
     private void validateItemDTO(CreateItemDTO createItemDTO){
         boolean controlFactor = false;
         String message = "";
+
+        // control double items checkers?
 
         if (createItemDTO.getName() == null || createItemDTO.getName().isBlank()) {
             message += "Please add the items name   ";

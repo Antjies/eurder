@@ -2,7 +2,6 @@ package com.switchfully.eurder.service.mappers;
 
 import com.switchfully.eurder.domain.models.Item;
 import com.switchfully.eurder.service.dtos.CreateItemDTO;
-import com.switchfully.eurder.service.dtos.ItemDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
