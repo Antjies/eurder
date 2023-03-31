@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class OrderService {
@@ -26,10 +27,19 @@ public class OrderService {
         this.itemRepository = itemRepository;
     }
 
-    public Collection<AllOrdersDTO> getAllOrdersFromOneCustomerById(String customerId) {
+    public AllOrdersDTO getAllOrdersFromOneCustomerById(String customerId) {
         userRepository.getCustomerById(customerId); //checks if user exists!
-        orderRepository.getAllOrdersFromOneCustomerById(customerId);
-        return orderMapper.createOrderDTOToDomain();
+        addDescription(orderMapper.toOrderDTOList(orderRepository.getAllOrdersFromOneCustomerById(customerId))); //returns List<OrderDTO>
+        return null;
+    }
+
+    //add the description of the item
+    private void addDescription(List<OrderDTO> orders) {
+        for(OrderDTO order: orders){
+            for(AllItemGroupDTO item: order.getItemGroupList()){
+                item.setDescription(itemRepository.getItemById(item.getItemId()).getDescription());
+            }
+        }
     }
 
     public TotalPriceDTO orderItems(CreateOrderDTO createOrderDTO) {

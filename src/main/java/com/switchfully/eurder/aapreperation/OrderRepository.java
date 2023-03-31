@@ -4,6 +4,7 @@ import com.switchfully.eurder.exception.exceptions.CustomerBoughtNothingExceptio
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
@@ -20,8 +21,8 @@ public class OrderRepository {
         orderDatabase.put(order.getCustomerId(), order);
     }
 
-    public Collection<Order> getAllOrdersFromOneCustomerById(String customerId) {
-        Collection<Order> ordersFromCust = orderDatabase.values().stream()
+    public List<Order> getAllOrdersFromOneCustomerById(String customerId) {
+        List<Order> ordersFromCust = orderDatabase.values().stream()
                 .filter(f -> f.getCustomerId().equals(customerId))
                 .collect(Collectors.toList());
 

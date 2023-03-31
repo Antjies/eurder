@@ -29,14 +29,15 @@ public class ItemGroupMapper {
                 .collect(Collectors.toList());
     }
 
-    public AllItemGroupDTO toAllItemGroupDTO(AllItemGroupDTO itemGroup) {
+    public AllItemGroupDTO toAllItemGroupDTO(ItemGroup itemGroup) {
         return new AllItemGroupDTO()
-                .setItemId(itemGroup.getItemId())
-                .setDescription(itemGroup.getDescription())
-
+                .setAmount(itemGroup.getAmount())
+                .setPrice(itemGroup.getPrice());
+        // adding description from somewhere else
+        // adding price done somewhere else
     }
 
-    public List<AllItemGroupDTO> toAllItemGroupCollectionDTO(List<AllItemGroupDTO> itemGroups){
+    public List<AllItemGroupDTO> toAllItemGroupCollectionDTO(List<ItemGroup> itemGroups){
         return itemGroups.stream()
                 .map(this::toAllItemGroupDTO)
                 .collect(Collectors.toList());

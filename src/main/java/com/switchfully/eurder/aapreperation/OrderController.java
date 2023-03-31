@@ -39,7 +39,7 @@ public class OrderController {
     @GetMapping(produces = "application/json", value = "customers")
     @ResponseStatus(HttpStatus.OK)
     //@Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
-    public Collection<AllOrdersDTO> getAllOrdersFromOneCustomerById(@RequestParam String customerId/*@RequestHeader String authorization*/) {
+    public AllOrdersDTO getAllOrdersFromOneCustomerById(@RequestParam String customerId/*@RequestHeader String authorization*/) {
         myLogger.info("Handler method getAllOrdersFromOneCustomerById is called");
         //securityService.validateAuthorization(authorization, Feature.CAN_ORDER_ITEMS); //no security yet for customers
         return orderService.getAllOrdersFromOneCustomerById(customerId);

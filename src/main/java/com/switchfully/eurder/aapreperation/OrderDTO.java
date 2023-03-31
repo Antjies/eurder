@@ -6,7 +6,7 @@ public class OrderDTO {
 
     private String id;
     private String CustomerId;
-    private List<ItemGroupDTO> itemGroupList;
+    private List<AllItemGroupDTO> itemGroupList;
     private double priceForTheOrder;
 
     public OrderDTO setId(String id) {
@@ -19,7 +19,7 @@ public class OrderDTO {
         return this;
     }
 
-    public OrderDTO setItemGroupList(List<ItemGroupDTO> itemGroupList) {
+    public OrderDTO setItemGroupList(List<AllItemGroupDTO> itemGroupList) {
         this.itemGroupList = itemGroupList;
         return this;
     }
@@ -37,7 +37,7 @@ public class OrderDTO {
         return CustomerId;
     }
 
-    public List<ItemGroupDTO> getItemGroupList() {
+    public List<AllItemGroupDTO> getItemGroupList() {
         return itemGroupList;
     }
 
