@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.List;
 
 @Service
@@ -23,6 +24,12 @@ public class OrderService {
         this.orderRepository = orderRepository;
         this.userRepository = userRepository;
         this.itemRepository = itemRepository;
+    }
+
+    public Collection<AllOrdersDTO> getAllOrdersFromOneCustomerById(String customerId) {
+        userRepository.getCustomerById(customerId); //checks if user exists!
+        orderRepository.getAllOrdersFromOneCustomerById(customerId);
+        return orderMapper.createOrderDTOToDomain();
     }
 
     public TotalPriceDTO orderItems(CreateOrderDTO createOrderDTO) {
@@ -108,6 +115,8 @@ public class OrderService {
         order.setCost(price);
         return price;
     }
+
+
 }
 
 

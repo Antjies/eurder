@@ -4,14 +4,29 @@ import java.util.List;
 
 public class OrderDTO {
 
-    private final String id;
-    private final String CustomerId;
-    private final List<ItemGroupDTO> itemGroupList; // no changes allowed once ordered!
+    private String id;
+    private String CustomerId;
+    private List<ItemGroupDTO> itemGroupList;
+    private double priceForTheOrder;
 
-    public OrderDTO(String id, String customerId, List<ItemGroupDTO> itemGroupList) {
+    public OrderDTO setId(String id) {
         this.id = id;
+        return this;
+    }
+
+    public OrderDTO setCustomerId(String customerId) {
         CustomerId = customerId;
+        return this;
+    }
+
+    public OrderDTO setItemGroupList(List<ItemGroupDTO> itemGroupList) {
         this.itemGroupList = itemGroupList;
+        return this;
+    }
+
+    public OrderDTO setPriceForTheOrder(double priceForTheOrder) {
+        this.priceForTheOrder = priceForTheOrder;
+        return this;
     }
 
     public String getId() {
@@ -24,5 +39,9 @@ public class OrderDTO {
 
     public List<ItemGroupDTO> getItemGroupList() {
         return itemGroupList;
+    }
+
+    public double getPriceForTheOrder() {
+        return priceForTheOrder;
     }
 }

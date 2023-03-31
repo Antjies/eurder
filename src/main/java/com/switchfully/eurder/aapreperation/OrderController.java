@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
+
 @RestController
 @RequestMapping(path = "orders")
 public class OrderController {
@@ -30,6 +32,17 @@ public class OrderController {
         myLogger.info("Handler method orderItems is called");
         //securityService.validateAuthorization(authorization, Feature.CAN_ORDER_ITEMS); //no security yet for customers
         return orderService.orderItems(createOrderDTO);
+    }
+
+
+    //Customer can view all his orders
+    @GetMapping(produces = "application/json", value = "customers")
+    @ResponseStatus(HttpStatus.OK)
+    //@Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
+    public Collection<AllOrdersDTO> getAllOrdersFromOneCustomerById(@RequestParam String customerId/*@RequestHeader String authorization*/) {
+        myLogger.info("Handler method getAllOrdersFromOneCustomerById is called");
+        //securityService.validateAuthorization(authorization, Feature.CAN_ORDER_ITEMS); //no security yet for customers
+        return orderService.getAllOrdersFromOneCustomerById(customerId);
     }
 
 

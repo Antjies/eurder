@@ -29,6 +29,19 @@ public class ItemGroupMapper {
                 .collect(Collectors.toList());
     }
 
+    public AllItemGroupDTO toAllItemGroupDTO(AllItemGroupDTO itemGroup) {
+        return new AllItemGroupDTO()
+                .setItemId(itemGroup.getItemId())
+                .setDescription(itemGroup.getDescription())
+
+    }
+
+    public List<AllItemGroupDTO> toAllItemGroupCollectionDTO(List<AllItemGroupDTO> itemGroups){
+        return itemGroups.stream()
+                .map(this::toAllItemGroupDTO)
+                .collect(Collectors.toList());
+    }
+
 
 
 

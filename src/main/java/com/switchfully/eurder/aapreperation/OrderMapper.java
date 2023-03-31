@@ -4,6 +4,8 @@ import com.switchfully.eurder.domain.models.Currency;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Collection;
+
 @Component
 public class OrderMapper {
 
@@ -16,6 +18,14 @@ public class OrderMapper {
 
     public Order createOrderDTOToDomain(CreateOrderDTO createOrderDTO) {
         return new Order(createOrderDTO.getCustomerId(), itemGroupMapper.createItemGroupDTOToCollectionDomain(createOrderDTO.getItemGroupList()));
+    }
+
+    public OrderDTO toOrderDTO(Order order){
+        new OrderDTO()
+                .setId(order.getId())
+                .setCustomerId(order.getCustomerId())
+                .setItemGroupList(itemGroupMapper.toItemGroupCollectionDTO(order.getItemGroupList()))
+                .getPriceForTheOrder(order.getCost());
     }
 
     public TotalPriceDTO toDTO(Order order) {
