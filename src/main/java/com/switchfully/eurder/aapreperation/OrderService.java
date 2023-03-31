@@ -6,6 +6,7 @@ import com.switchfully.eurder.exception.exceptions.ValidateItemInput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -24,12 +25,15 @@ public class OrderService {
         this.itemRepository = itemRepository;
     }
 
-    public void orderItems(CreateOrderDTO createOrderDTO) {
+    public TotalPriceDTO orderItems(CreateOrderDTO createOrderDTO) {
         validateOrderItemInput(createOrderDTO); //control about the input!!  ok
         userRepository.getCustomerById(createOrderDTO.getCustomerId()); //checks if user exists! ok
         validateItemId(createOrderDTO);  //checks if items exists
-        //some logic to calculate the shippingDate!!
-
+        Order newOrder = orderMapper.createOrderDTOToDomain(createOrderDTO); // change from DTO to Domain
+        setShippingDateItemGroupOrder(newOrder); //some logic to calculate the shippingDate and add to object!!
+        calculateTotalPriceOfOrder(newOrder); //calculate cost and add to object
+        orderRepository.addNewOrder(newOrder); //save it in the database
+        return orderMapper.toDTO(newOrder);
     }
 
     private void validateOrderItemInput(CreateOrderDTO createOrderDTO) {
@@ -71,31 +75,41 @@ public class OrderService {
         }
     }
 
-    private void validateItemId(CreateOrderDTO createOrderDTO){
+    private void validateItemId(CreateOrderDTO createOrderDTO) {
         List<String> itemIds = createOrderDTO.getItemGroupList().stream()
                 .map(CreateItemGroupDTO::getItemId)
                 .toList();
 
-        for(String item: itemIds){
+        for (String item : itemIds) {
             itemRepository.getItemById(item);
         }
     }
 
     //some logic to calculate the shippingDate!!
-    private void setShippingDateItemGroupOrder(CreateOrderDTO createOrderDTO){
-        for(CreateItemGroupDTO item: createOrderDTO.getItemGroupList()){
+    private void setShippingDateItemGroupOrder(Order order) {
+        for (ItemGroup item : order.getItemGroupList()) {
             //refactoring needed
             //if items in Stock is higher or same as order then the shipping date is the next day
-            if(itemRepository.getItemById(item.getItemId()).getAmountInStock() >= item.getAmount()){
-                //shipping date +1
+            if (itemRepository.getItemById(item.getItemId()).getAmountInStock() >= item.getAmount()) {
+                item.setShippingDate(LocalDate.now().plusDays(1));//shipping date +1
+                itemRepository.changeAmountInItemRepository(item.getItemId(), item.getAmount());
             } else {
-                //shipping date +7
+                item.setShippingDate(LocalDate.now().plusDays(7));//shipping date +7
+                itemRepository.getItemById(item.getItemId()).setAmountInStock(itemRepository.getItemById(item.getItemId()).getAmountInStock() - item.getAmount());
             }
         }
     }
 
-
-
-
-
+    private double calculateTotalPriceOfOrder(Order order){
+        double price = 0.0;
+        for(ItemGroup item: order.getItemGroupList()){
+            price += itemRepository.getItemById(item.getItemId()).getPrice().getAmount() * item.getAmount();
+        }
+        order.setCost(price);
+        return price;
+    }
 }
+
+
+
+

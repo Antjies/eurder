@@ -21,6 +21,12 @@ public class ItemRepository {
         itemDatabase.put(newItem.getId(), newItem);
     }
 
+    public void changeAmountInItemRepository(String itemId, int amount){
+        Item changeItemAmount = getItemById(itemId);
+        changeItemAmount.setAmountInStock(changeItemAmount.getAmountInStock() - amount);
+        itemDatabase.replace(changeItemAmount.getId(), changeItemAmount);
+    }
+
     public Collection<Item> getAllItems(){
         return itemDatabase.values();
     }

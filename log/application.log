@@ -198,3 +198,93 @@
 2023-03-31T13:48:18.712+02:00  INFO 18764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-03-31T13:48:18.713+02:00  INFO 18764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2023-03-31T13:48:19.312+02:00  INFO 18764 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 218 ms
+2023-03-31T17:21:58.822+02:00  INFO 17576 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 17576 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T17:21:58.825+02:00  INFO 17576 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T17:21:59.634+02:00  INFO 17576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T17:21:59.642+02:00  INFO 17576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T17:21:59.642+02:00  INFO 17576 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T17:21:59.720+02:00  INFO 17576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T17:21:59.720+02:00  INFO 17576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2023-03-31T17:21:59.771+02:00  WARN 17576 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService' defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderMapper' defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-03-31T17:21:59.773+02:00  INFO 17576 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-31T17:21:59.782+02:00  INFO 17576 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-31T17:21:59.797+02:00 ERROR 17576 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   orderController defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderController.class]
+┌─────┐
+|  orderService defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderService.class]
+↑     ↓
+|  orderMapper defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderMapper.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-03-31T17:25:54.952+02:00  INFO 20960 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 20960 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T17:25:54.955+02:00  INFO 20960 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T17:25:55.645+02:00  INFO 20960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T17:25:55.651+02:00  INFO 20960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T17:25:55.652+02:00  INFO 20960 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T17:25:55.719+02:00  INFO 20960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T17:25:55.719+02:00  INFO 20960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 733 ms
+2023-03-31T17:25:55.766+02:00  WARN 20960 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService' defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderMapper' defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'orderService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-03-31T17:25:55.768+02:00  INFO 20960 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-31T17:25:55.777+02:00  INFO 20960 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-31T17:25:55.795+02:00 ERROR 20960 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   orderController defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderController.class]
+┌─────┐
+|  orderService defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderService.class]
+↑     ↓
+|  orderMapper defined in file [C:\_development\switchfully\spring-boot-projects\eurder\target\classes\com\switchfully\eurder\aapreperation\OrderMapper.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-03-31T17:43:37.643+02:00  INFO 17608 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 17608 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-03-31T17:43:37.645+02:00  INFO 17608 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-03-31T17:43:38.548+02:00  INFO 17608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-31T17:43:38.555+02:00  INFO 17608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-31T17:43:38.555+02:00  INFO 17608 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-31T17:43:38.621+02:00  INFO 17608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-31T17:43:38.621+02:00  INFO 17608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2023-03-31T17:43:39.192+02:00  INFO 17608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-31T17:43:39.199+02:00  INFO 17608 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.846 seconds (process running for 2.327)
+2023-03-31T17:43:51.329+02:00  INFO 17608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-31T17:43:51.330+02:00  INFO 17608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-31T17:43:51.330+02:00  INFO 17608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-31T17:43:51.892+02:00  INFO 17608 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 211 ms
+2023-03-31T17:45:08.073+02:00  INFO 17608 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method registerNewCustomer is called
+2023-03-31T17:45:38.967+02:00  INFO 17608 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method getAllCustomers is called
+2023-03-31T17:46:30.152+02:00  INFO 17608 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
+2023-03-31T17:46:50.500+02:00  INFO 17608 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method AddNewItem is called
+2023-03-31T17:46:59.801+02:00  INFO 17608 --- [http-nio-8080-exec-7] c.switchfully.eurder.api.UserController  : Handler method getAllItems is called
+2023-03-31T17:48:05.270+02:00  INFO 17608 --- [http-nio-8080-exec-8] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T17:48:51.028+02:00  INFO 17608 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method getAllItems is called
+2023-03-31T17:49:13.346+02:00  INFO 17608 --- [http-nio-8080-exec-10] c.switchfully.eurder.api.UserController  : Handler method orderItems is called
+2023-03-31T17:49:45.849+02:00  INFO 17608 --- [http-nio-8080-exec-3] c.switchfully.eurder.api.UserController  : Handler method getAllItems is called

@@ -26,11 +26,10 @@ public class OrderController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json")
     //@Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
-    public OrderDTO orderItems(@RequestBody CreateOrderDTO createOrderDTO /*, @RequestHeader String authorization*/) {
+    public TotalPriceDTO orderItems(@RequestBody CreateOrderDTO createOrderDTO /*, @RequestHeader String authorization*/) {
         myLogger.info("Handler method orderItems is called");
         //securityService.validateAuthorization(authorization, Feature.CAN_ORDER_ITEMS); //no security yet for customers
-        orderService.orderItems(createOrderDTO);
-        return null;
+        return orderService.orderItems(createOrderDTO);
     }
 
 

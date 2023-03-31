@@ -26,7 +26,8 @@ public class ItemGroup {
     }
 
     //Logic itself happens in Service itself. Then it just adds the correct date to it...
-    public void setShippingDate(LocalDate shippingDate) {
+    public ItemGroup setShippingDate(LocalDate shippingDate) {
         this.shippingDate = shippingDate;
+        return this;
     }
 }

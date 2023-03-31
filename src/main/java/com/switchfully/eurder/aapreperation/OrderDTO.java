@@ -1,7 +1,6 @@
 package com.switchfully.eurder.aapreperation;
 
 import java.util.List;
-import java.util.UUID;
 
 public class OrderDTO {
 
@@ -9,8 +8,8 @@ public class OrderDTO {
     private final String CustomerId;
     private final List<ItemGroupDTO> itemGroupList; // no changes allowed once ordered!
 
-    public OrderDTO(String customerId, List<ItemGroupDTO> itemGroupList) {
-        this.id = UUID.randomUUID().toString();
+    public OrderDTO(String id, String customerId, List<ItemGroupDTO> itemGroupList) {
+        this.id = id;
         CustomerId = customerId;
         this.itemGroupList = itemGroupList;
     }

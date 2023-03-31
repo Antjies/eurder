@@ -36,4 +36,8 @@ public class Item {
     public int getAmountInStock() {
         return amountInStock;
     }
+
+    public void setAmountInStock(int amountInStock) {
+        this.amountInStock = amountInStock;
+    }
 }

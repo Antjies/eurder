@@ -8,6 +8,7 @@ public class Order {
     private final String id;
     private final String CustomerId;
     private final List<ItemGroup> itemGroupList; // no changes allowed once ordered!
+    private double cost;
 
     public Order(String customerId, List<ItemGroup> itemGroupList) {
         this.id = UUID.randomUUID().toString();
@@ -26,4 +27,16 @@ public class Order {
     public List<ItemGroup> getItemGroupList() {
         return itemGroupList;
     }
+
+    public Order setCost(double cost) {
+        this.cost = cost;
+        return this;
+    }
+
+    public double getCost() {
+        return cost;
+    }
 }
+
+
+
