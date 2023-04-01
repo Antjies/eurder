@@ -1,6 +1,4 @@
-package com.switchfully.eurder.aapreperation;
-
-import java.time.LocalDate;
+package com.switchfully.eurder.service.dtos;
 
 public class AllItemGroupDTO {
 
@@ -11,6 +9,11 @@ public class AllItemGroupDTO {
 
     public String getItemId() {
         return itemId;
+    }
+
+    public AllItemGroupDTO setItemId(String itemId) {
+        this.itemId = itemId;
+        return this;
     }
 
     public String getDescription() {

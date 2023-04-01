@@ -1,4 +1,6 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.domain;
+
+import com.switchfully.eurder.service.dtos.AllItemGroupDTO;
 
 import java.util.List;
 

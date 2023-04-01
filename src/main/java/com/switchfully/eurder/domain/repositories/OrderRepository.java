@@ -1,5 +1,6 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.domain.repositories;
 
+import com.switchfully.eurder.domain.models.Order;
 import com.switchfully.eurder.exception.exceptions.CustomerBoughtNothingException;
 import org.springframework.stereotype.Repository;
 
@@ -18,7 +19,7 @@ public class OrderRepository {
     }
 
     public void addNewOrder(Order order) {
-        orderDatabase.put(order.getCustomerId(), order);
+        orderDatabase.put(order.getId(), order);
     }
 
     public List<Order> getAllOrdersFromOneCustomerById(String customerId) {

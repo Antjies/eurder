@@ -1,14 +1,15 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.api;
 
-import com.switchfully.eurder.api.UserController;
+import com.switchfully.eurder.service.dtos.AllOrdersDTO;
+import com.switchfully.eurder.service.dtos.CreateOrderDTO;
+import com.switchfully.eurder.service.OrderService;
+import com.switchfully.eurder.service.dtos.TotalPriceDTO;
 import com.switchfully.eurder.service.SecurityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Collection;
 
 @RestController
 @RequestMapping(path = "orders")
@@ -36,7 +37,7 @@ public class OrderController {
 
 
     //Customer can view all his orders
-    @GetMapping(produces = "application/json", value = "customers")
+    @GetMapping(produces = "application/json", value = "{customerId}")
     @ResponseStatus(HttpStatus.OK)
     //@Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
     public AllOrdersDTO getAllOrdersFromOneCustomerById(@RequestParam String customerId/*@RequestHeader String authorization*/) {

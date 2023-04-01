@@ -1,15 +1,20 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.service;
 
+import com.switchfully.eurder.domain.OrderDTO;
+import com.switchfully.eurder.domain.models.Item;
+import com.switchfully.eurder.domain.models.ItemGroup;
+import com.switchfully.eurder.domain.models.Order;
 import com.switchfully.eurder.domain.repositories.ItemRepository;
+import com.switchfully.eurder.domain.repositories.OrderRepository;
 import com.switchfully.eurder.domain.repositories.UserRepository;
 import com.switchfully.eurder.exception.exceptions.ValidateItemInput;
+import com.switchfully.eurder.service.dtos.*;
+import com.switchfully.eurder.service.mappers.OrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class OrderService {
@@ -29,17 +34,36 @@ public class OrderService {
 
     public AllOrdersDTO getAllOrdersFromOneCustomerById(String customerId) {
         userRepository.getCustomerById(customerId); //checks if user exists!
-        addDescription(orderMapper.toOrderDTOList(orderRepository.getAllOrdersFromOneCustomerById(customerId))); //returns List<OrderDTO>
-        return null;
+        List<OrderDTO> workingList = orderMapper.toOrderDTOList(orderRepository.getAllOrdersFromOneCustomerById(customerId)); //check if customer bought something
+        double totalPrice = getTotalPrice(workingList); //count the amount of all the orders
+        addDescription(workingList); // description name needs added
+        return new AllOrdersDTO()
+                .setCustomerId(customerId)
+                .setTotalPriceAllOrders(totalPrice)
+                .setAllOrdersOfCustomer(workingList);
+    }
+
+    private static double getTotalPrice(List<OrderDTO> workingList) {
+        return workingList.stream()
+                .mapToDouble(OrderDTO::getPriceForTheOrder)
+                .sum();
     }
 
     //add the description of the item
-    private void addDescription(List<OrderDTO> orders) {
-        for(OrderDTO order: orders){
+    private List<OrderDTO> addDescription(List<OrderDTO> orderDTOList) {
+        /*List<String> itemId = orderDTOList.stream()
+                .flatMap(f -> f.getItemGroupList().stream().map(d -> d.getItemId()))
+                .collect(Collectors.toList());*/
+
+        for(OrderDTO order: orderDTOList){
             for(AllItemGroupDTO item: order.getItemGroupList()){
-                item.setDescription(itemRepository.getItemById(item.getItemId()).getDescription());
+                Item foundItem = itemRepository.getItemById(item.getItemId());
+                if(foundItem != null) {
+                    item.setDescription(foundItem.getDescription());
+                }
             }
         }
+        return orderDTOList;
     }
 
     public TotalPriceDTO orderItems(CreateOrderDTO createOrderDTO) {
@@ -120,9 +144,12 @@ public class OrderService {
     private double calculateTotalPriceOfOrder(Order order){
         double price = 0.0;
         for(ItemGroup item: order.getItemGroupList()){
+            double priceItemGroup = 0.0;
             price += itemRepository.getItemById(item.getItemId()).getPrice().getAmount() * item.getAmount();
+            priceItemGroup = itemRepository.getItemById(item.getItemId()).getPrice().getAmount() * item.getAmount();
+            item.setCostPerItemGroup(priceItemGroup);
         }
-        order.setCost(price);
+        order.setPriceForTheOrder(price);
         return price;
     }
 

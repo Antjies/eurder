@@ -1,5 +1,9 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.service.mappers;
 
+import com.switchfully.eurder.domain.models.ItemGroup;
+import com.switchfully.eurder.service.dtos.AllItemGroupDTO;
+import com.switchfully.eurder.service.dtos.CreateItemGroupDTO;
+import com.switchfully.eurder.service.dtos.ItemGroupDTO;
 import org.springframework.stereotype.Component;
 
 
@@ -31,10 +35,10 @@ public class ItemGroupMapper {
 
     public AllItemGroupDTO toAllItemGroupDTO(ItemGroup itemGroup) {
         return new AllItemGroupDTO()
+                .setItemId(itemGroup.getItemId())
                 .setAmount(itemGroup.getAmount())
-                .setPrice(itemGroup.getPrice());
+                .setPrice(itemGroup.getCostPerItemGroup()); // already saved when creating ok
         // adding description from somewhere else
-        // adding price done somewhere else
     }
 
     public List<AllItemGroupDTO> toAllItemGroupCollectionDTO(List<ItemGroup> itemGroups){

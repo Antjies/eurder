@@ -1,4 +1,4 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.domain.models;
 
 import java.util.List;
 import java.util.UUID;
@@ -8,7 +8,7 @@ public class Order {
     private final String id;
     private final String CustomerId;
     private final List<ItemGroup> itemGroupList; // no changes allowed once ordered!
-    private double cost;
+    private double priceForTheOrder;
 
     public Order(String customerId, List<ItemGroup> itemGroupList) {
         this.id = UUID.randomUUID().toString();
@@ -28,13 +28,13 @@ public class Order {
         return itemGroupList;
     }
 
-    public Order setCost(double cost) {
-        this.cost = cost;
+    public Order setPriceForTheOrder(double priceForTheOrder) {
+        this.priceForTheOrder = priceForTheOrder;
         return this;
     }
 
-    public double getCost() {
-        return cost;
+    public double getPriceForTheOrder() {
+        return priceForTheOrder;
     }
 }
 

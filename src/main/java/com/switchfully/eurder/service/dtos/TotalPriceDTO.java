@@ -1,4 +1,4 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.service.dtos;
 
 
 import com.switchfully.eurder.domain.models.Currency;
@@ -10,7 +10,7 @@ public class TotalPriceDTO {
     private String id;
     private String CustomerId;
     private List<ItemGroupDTO> itemGroupList; // no changes allowed once ordered!
-    private double price;
+    private double priceForTheOrder;
     private Currency currency;
 
     public TotalPriceDTO setId(String id) {
@@ -28,8 +28,8 @@ public class TotalPriceDTO {
         return this;
     }
 
-    public TotalPriceDTO setPrice(double price) {
-        this.price = price;
+    public TotalPriceDTO setPriceForTheOrder(double priceForTheOrder) {
+        this.priceForTheOrder = priceForTheOrder;
         return this;
     }
 
@@ -50,8 +50,8 @@ public class TotalPriceDTO {
         return itemGroupList;
     }
 
-    public double getPrice() {
-        return price;
+    public double getPriceForTheOrder() {
+        return priceForTheOrder;
     }
 
     public Currency getCurrency() {

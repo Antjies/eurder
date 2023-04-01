@@ -1,10 +1,14 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.service.mappers;
 
+import com.switchfully.eurder.domain.OrderDTO;
 import com.switchfully.eurder.domain.models.Currency;
+import com.switchfully.eurder.domain.models.Order;
+import com.switchfully.eurder.service.dtos.CreateOrderDTO;
+import com.switchfully.eurder.service.dtos.TotalPriceDTO;
+import com.switchfully.eurder.service.mappers.ItemGroupMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,7 +37,7 @@ public class OrderMapper {
                 .setId(order.getId())
                 .setCustomerId(order.getCustomerId())
                 .setItemGroupList(itemGroupMapper.toAllItemGroupCollectionDTO(order.getItemGroupList()))
-                .setPriceForTheOrder(order.getCost()); // cost should already be saved when ordering
+                .setPriceForTheOrder(order.getPriceForTheOrder()); // cost should already be saved when ordering ok
 
     }
 
@@ -42,7 +46,7 @@ public class OrderMapper {
                 .setId(order.getId())
                 .setCustomerId(order.getCustomerId())
                 .setItemGroupList(itemGroupMapper.toItemGroupCollectionDTO(order.getItemGroupList()))
-                .setPrice(order.getCost())
+                .setPriceForTheOrder(order.getPriceForTheOrder())
                 .setCurrency(Currency.Euro);
     }
 }

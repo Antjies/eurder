@@ -1,14 +1,15 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.domain.models;
 
 import java.time.LocalDate;
 
-public class ItemGroupDTO {
+public class ItemGroup {
 
     private final String itemId;
     private final int amount;
     private LocalDate shippingDate;
+    private double costPerItemGroup;
 
-    public ItemGroupDTO(String itemId, int amount) {
+    public ItemGroup(String itemId, int amount) {
         this.itemId = itemId;
         this.amount = amount;
     }
@@ -26,8 +27,18 @@ public class ItemGroupDTO {
     }
 
     //Logic itself happens in Service itself. Then it just adds the correct date to it...
-    public ItemGroupDTO setShippingDate(LocalDate shippingDate) {
+    public ItemGroup setShippingDate(LocalDate shippingDate) {
         this.shippingDate = shippingDate;
+        return this;
+    }
+
+    public double getCostPerItemGroup() {
+        return costPerItemGroup;
+    }
+
+    //Logic itself happens in Service itself.
+    public ItemGroup setCostPerItemGroup(double costPerItemGroup) {
+        this.costPerItemGroup = costPerItemGroup;
         return this;
     }
 }

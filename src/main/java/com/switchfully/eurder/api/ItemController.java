@@ -40,14 +40,14 @@ public class ItemController {
     }
 
     //Story 4: Update an Item -> Need to be Admin
-    /*@PutMapping(value = "{id}")
+    @PutMapping(value = "items/{id}")
     @ResponseStatus(HttpStatus.OK)
     @Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
     public ItemDTO updateItemById(@PathVariable String id, @RequestBody ItemDTO itemDTO , @RequestHeader String authorization){
         myLogger.info("Handler method updateItemById is called");
         securityService.validateAuthorization(authorization, Feature.CAN_UPDATE_AN_ITEM);
         return itemService.updateItemById(id, itemDTO);
-    }*/
+    }
 
     //View all Items -> You don't have to register to see our products!
     @GetMapping(produces = "application/json")

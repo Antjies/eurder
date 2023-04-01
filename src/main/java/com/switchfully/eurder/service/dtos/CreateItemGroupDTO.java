@@ -1,4 +1,4 @@
-package com.switchfully.eurder.aapreperation;
+package com.switchfully.eurder.service.dtos;
 
 import java.time.LocalDate;
 
