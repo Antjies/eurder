@@ -1,8 +1,10 @@
 package com.switchfully.eurder.domain.repositories;
 
 import com.switchfully.eurder.domain.models.Item;
+import com.switchfully.eurder.domain.models.Price;
 import com.switchfully.eurder.exception.exceptions.CustomerNotFoundException;
 import com.switchfully.eurder.exception.exceptions.ItemNotFoundException;
+import com.switchfully.eurder.service.dtos.ItemDTO;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -36,5 +38,13 @@ public class ItemRepository {
                 .filter(item -> item.getId().equals(itemId))
                 .findFirst()
                 .orElseThrow(() -> new ItemNotFoundException("Item with item " + itemId + " doesn't exist."));
+    }
+
+    public void updateItemById(Item oldItem, ItemDTO newItem) {
+        oldItem.setDescription(newItem.getDescription());
+        oldItem.setName(newItem.getName());
+        oldItem.setPrice(new Price(newItem.getPrice().getAmount(), newItem.getPrice().getCurrency()));
+        oldItem.setAmountInStock(newItem.getAmountInStock());
+        itemDatabase.replace(oldItem.getId(), oldItem);
     }
 }

@@ -37,6 +37,18 @@ public class Item {
         return amountInStock;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPrice(Price price) {
+        this.price = price;
+    }
+
     public void setAmountInStock(int amountInStock) {
         this.amountInStock = amountInStock;
     }
