@@ -40,7 +40,7 @@ public class ItemController {
     }
 
     //Story 4: Update an Item -> Need to be Admin
-    @PutMapping(value = "items/{id}")
+    @PutMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.OK)
     @Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
     public ItemDTO updateItemById(@PathVariable String id, @RequestBody ItemDTO itemDTO , @RequestHeader String authorization){
