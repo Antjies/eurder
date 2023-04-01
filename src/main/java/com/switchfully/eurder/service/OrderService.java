@@ -1,6 +1,6 @@
 package com.switchfully.eurder.service;
 
-import com.switchfully.eurder.domain.OrderDTO;
+import com.switchfully.eurder.service.dtos.OrderDTO;
 import com.switchfully.eurder.domain.models.Item;
 import com.switchfully.eurder.domain.models.ItemGroup;
 import com.switchfully.eurder.domain.models.Order;

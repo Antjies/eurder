@@ -1,11 +1,10 @@
 package com.switchfully.eurder.service.mappers;
 
-import com.switchfully.eurder.domain.OrderDTO;
+import com.switchfully.eurder.service.dtos.OrderDTO;
 import com.switchfully.eurder.domain.models.Currency;
 import com.switchfully.eurder.domain.models.Order;
 import com.switchfully.eurder.service.dtos.CreateOrderDTO;
 import com.switchfully.eurder.service.dtos.TotalPriceDTO;
-import com.switchfully.eurder.service.mappers.ItemGroupMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,4 @@
-package com.switchfully.eurder.domain;
-
-import com.switchfully.eurder.service.dtos.AllItemGroupDTO;
+package com.switchfully.eurder.service.dtos;
 
 import java.util.List;
 

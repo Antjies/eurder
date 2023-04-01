@@ -1,7 +1,5 @@
 package com.switchfully.eurder.service.dtos;
 
-import com.switchfully.eurder.domain.OrderDTO;
-
 import java.util.List;
 
 public class AllOrdersDTO {
