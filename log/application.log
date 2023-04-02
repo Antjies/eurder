@@ -313,3 +313,325 @@
 2023-04-01T22:49:31.093+02:00  INFO 22156 --- [main] c.s.eurder.EurderApplicationTests        : Starting EurderApplicationTests using Java 17.0.6 with PID 22156 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
 2023-04-01T22:49:31.095+02:00  INFO 22156 --- [main] c.s.eurder.EurderApplicationTests        : No active profile set, falling back to 1 default profile: "default"
 2023-04-01T22:49:34.000+02:00  INFO 22156 --- [main] c.s.eurder.EurderApplicationTests        : Started EurderApplicationTests in 3.286 seconds (process running for 4.985)
+2023-04-02T12:34:36.816+02:00  INFO 21296 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 21296 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:34:36.818+02:00  INFO 21296 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:34:38.142+02:00  INFO 21296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:34:38.152+02:00  INFO 21296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:34:38.152+02:00  INFO 21296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:34:38.255+02:00  INFO 21296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:34:38.255+02:00  INFO 21296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1225 ms
+2023-04-02T12:34:39.216+02:00  INFO 21296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64302 (http) with context path ''
+2023-04-02T12:34:39.226+02:00  INFO 21296 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 2.73 seconds (process running for 4.174)
+2023-04-02T12:35:45.458+02:00  INFO 5956 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 5956 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:35:45.460+02:00  INFO 5956 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:35:46.139+02:00  INFO 5956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-02T12:35:46.146+02:00  INFO 5956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:35:46.146+02:00  INFO 5956 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:35:46.212+02:00  INFO 5956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:35:46.213+02:00  INFO 5956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 723 ms
+2023-04-02T12:35:46.768+02:00  INFO 5956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-02T12:35:46.775+02:00  INFO 5956 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.612 seconds (process running for 2.057)
+2023-04-02T12:35:53.518+02:00  INFO 5956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02T12:35:53.518+02:00  INFO 5956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02T12:35:53.519+02:00  INFO 5956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-02T12:35:53.900+02:00  INFO 5956 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 209 ms
+2023-04-02T12:36:50.502+02:00  INFO 20756 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 20756 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:36:50.503+02:00  INFO 20756 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:36:51.899+02:00  INFO 20756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:36:51.910+02:00  INFO 20756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:36:51.910+02:00  INFO 20756 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:36:52.039+02:00  INFO 20756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:36:52.040+02:00  INFO 20756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1281 ms
+2023-04-02T12:36:53.268+02:00  INFO 20756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64361 (http) with context path ''
+2023-04-02T12:36:53.278+02:00  INFO 20756 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 3.117 seconds (process running for 4.663)
+2023-04-02T12:37:27.598+02:00  INFO 5956 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:37:39.366+02:00  INFO 13660 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 13660 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:37:39.368+02:00  INFO 13660 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:37:40.610+02:00  INFO 13660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:37:40.620+02:00  INFO 13660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:37:40.620+02:00  INFO 13660 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:37:40.738+02:00  INFO 13660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:37:40.738+02:00  INFO 13660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2023-04-02T12:37:41.845+02:00  INFO 13660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64389 (http) with context path ''
+2023-04-02T12:37:41.855+02:00  INFO 13660 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 2.81 seconds (process running for 3.906)
+2023-04-02T12:37:58.935+02:00  INFO 5956 --- [http-nio-8080-exec-7] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:40:00.002+02:00  INFO 1992 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 1992 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:40:00.004+02:00  INFO 1992 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:40:01.040+02:00  INFO 1992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:40:01.049+02:00  INFO 1992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:40:01.049+02:00  INFO 1992 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:40:01.141+02:00  INFO 1992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:40:01.141+02:00  INFO 1992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 953 ms
+2023-04-02T12:40:02.102+02:00  INFO 1992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64418 (http) with context path ''
+2023-04-02T12:40:02.111+02:00  INFO 1992 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 2.366 seconds (process running for 3.224)
+2023-04-02T12:40:03.176+02:00  INFO 5956 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:42:08.761+02:00  INFO 10416 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 10416 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:42:08.763+02:00  INFO 10416 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:42:09.848+02:00  INFO 10416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:42:09.857+02:00  INFO 10416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:42:09.858+02:00  INFO 10416 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:42:09.953+02:00  INFO 10416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:42:09.954+02:00  INFO 10416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2023-04-02T12:42:10.962+02:00  INFO 10416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64461 (http) with context path ''
+2023-04-02T12:42:10.973+02:00  INFO 10416 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 2.467 seconds (process running for 3.4)
+2023-04-02T12:42:12.100+02:00  INFO 5956 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:47:27.155+02:00  INFO 18772 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 18772 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:47:27.156+02:00  INFO 18772 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:47:28.150+02:00  INFO 18772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:47:28.159+02:00  INFO 18772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:47:28.160+02:00  INFO 18772 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:47:28.249+02:00  INFO 18772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:47:28.250+02:00  INFO 18772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+2023-04-02T12:47:29.225+02:00  INFO 18772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64520 (http) with context path ''
+2023-04-02T12:47:29.233+02:00  INFO 18772 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 2.33 seconds (process running for 3.24)
+2023-04-02T12:47:30.296+02:00  INFO 5956 --- [http-nio-8080-exec-4] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:51:26.235+02:00  INFO 23036 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 23036 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:51:26.237+02:00  INFO 23036 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:51:27.427+02:00  INFO 23036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T12:51:27.436+02:00  INFO 23036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:51:27.437+02:00  INFO 23036 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:51:27.530+02:00  INFO 23036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:51:27.531+02:00  INFO 23036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2023-04-02T12:51:28.527+02:00  INFO 23036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64582 (http) with context path ''
+2023-04-02T12:51:28.536+02:00  INFO 23036 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 2.592 seconds (process running for 3.594)
+2023-04-02T12:51:29.603+02:00  INFO 5956 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:55:07.887+02:00  INFO 5956 --- [http-nio-8080-exec-9] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T12:56:03.870+02:00  INFO 12904 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 12904 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T12:56:03.872+02:00  INFO 12904 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T12:56:04.549+02:00  INFO 12904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-02T12:56:04.556+02:00  INFO 12904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T12:56:04.556+02:00  INFO 12904 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T12:56:04.622+02:00  INFO 12904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T12:56:04.623+02:00  INFO 12904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 719 ms
+2023-04-02T12:56:05.184+02:00  INFO 12904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-02T12:56:05.190+02:00  INFO 12904 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 1.619 seconds (process running for 2.014)
+2023-04-02T12:56:17.237+02:00  INFO 12904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02T12:56:17.238+02:00  INFO 12904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02T12:56:17.238+02:00  INFO 12904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-02T12:56:17.259+02:00  INFO 12904 --- [http-nio-8080-exec-1] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T13:01:22.690+02:00  INFO 12904 --- [http-nio-8080-exec-2] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T13:16:40.698+02:00  INFO 12904 --- [http-nio-8080-exec-5] c.switchfully.eurder.api.UserController  : Handler method showCustomerById is called
+2023-04-02T15:36:02.546+02:00  INFO 24412 --- [main] c.s.eurder.EurderApplicationTests        : Starting EurderApplicationTests using Java 17.0.6 with PID 24412 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T15:36:02.548+02:00  INFO 24412 --- [main] c.s.eurder.EurderApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T15:36:05.634+02:00  INFO 24412 --- [main] c.s.eurder.EurderApplicationTests        : Started EurderApplicationTests in 3.486 seconds (process running for 4.924)
+2023-04-02T15:47:41.163+02:00  INFO 21472 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 21472 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T15:47:41.167+02:00  INFO 21472 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T15:47:42.227+02:00  INFO 21472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-02T15:47:42.239+02:00  INFO 21472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T15:47:42.239+02:00  INFO 21472 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T15:47:42.383+02:00  INFO 21472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T15:47:42.383+02:00  INFO 21472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2023-04-02T15:47:43.320+02:00  INFO 21472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-02T15:47:43.331+02:00  INFO 21472 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.762 seconds (process running for 3.477)
+2023-04-02T15:52:11.637+02:00  INFO 21472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02T15:52:11.638+02:00  INFO 21472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02T15:52:11.639+02:00  INFO 21472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-02T16:52:27.018+02:00  INFO 5196 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 5196 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T16:52:27.023+02:00  INFO 5196 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T16:52:28.114+02:00  INFO 5196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-02T16:52:28.129+02:00  INFO 5196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T16:52:28.129+02:00  INFO 5196 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T16:52:28.262+02:00  INFO 5196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T16:52:28.263+02:00  INFO 5196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2023-04-02T16:52:29.223+02:00  INFO 5196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-02T16:52:29.233+02:00  INFO 5196 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.725 seconds (process running for 3.386)
+2023-04-02T20:43:18.812+02:00  INFO 12556 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 12556 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:43:18.814+02:00  INFO 12556 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:43:20.558+02:00  INFO 12556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:43:20.573+02:00  INFO 12556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:43:20.574+02:00  INFO 12556 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:43:20.717+02:00  INFO 12556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:43:20.718+02:00  INFO 12556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1562 ms
+2023-04-02T20:43:22.149+02:00  INFO 12556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61957 (http) with context path ''
+2023-04-02T20:43:22.162+02:00  INFO 12556 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.801 seconds (process running for 5.627)
+2023-04-02T20:43:22.731+02:00  INFO 12556 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T20:43:55.752+02:00  INFO 13780 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 13780 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:43:55.754+02:00  INFO 13780 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:43:57.395+02:00  INFO 13780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:43:57.409+02:00  INFO 13780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:43:57.410+02:00  INFO 13780 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:43:57.574+02:00  INFO 13780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:43:57.574+02:00  INFO 13780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1525 ms
+2023-04-02T20:43:59.039+02:00  INFO 13780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61963 (http) with context path ''
+2023-04-02T20:43:59.054+02:00  INFO 13780 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.738 seconds (process running for 5.21)
+2023-04-02T20:43:59.731+02:00  INFO 13780 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T20:44:30.575+02:00  INFO 13084 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 13084 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:44:30.577+02:00  INFO 13084 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:44:32.239+02:00  INFO 13084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:44:32.252+02:00  INFO 13084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:44:32.252+02:00  INFO 13084 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:44:32.402+02:00  INFO 13084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:44:32.402+02:00  INFO 13084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1511 ms
+2023-04-02T20:44:33.761+02:00  INFO 13084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61968 (http) with context path ''
+2023-04-02T20:44:33.775+02:00  INFO 13084 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.671 seconds (process running for 5.248)
+2023-04-02T20:44:34.526+02:00  INFO 13084 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T20:45:42.452+02:00  INFO 304 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 304 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:45:42.454+02:00  INFO 304 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:45:44.103+02:00  INFO 304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:45:44.117+02:00  INFO 304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:45:44.118+02:00  INFO 304 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:45:44.274+02:00  INFO 304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:45:44.275+02:00  INFO 304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
+2023-04-02T20:45:45.436+02:00  INFO 304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61976 (http) with context path ''
+2023-04-02T20:45:45.447+02:00  INFO 304 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.423 seconds (process running for 4.911)
+2023-04-02T20:45:45.978+02:00  INFO 304 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T20:45:46.024+02:00  INFO 304 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 304 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:45:46.025+02:00  INFO 304 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:45:46.228+02:00  INFO 304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:45:46.229+02:00  INFO 304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:45:46.230+02:00  INFO 304 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:45:46.271+02:00  INFO 304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:45:46.272+02:00  INFO 304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 244 ms
+2023-04-02T20:45:46.730+02:00  INFO 304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61978 (http) with context path ''
+2023-04-02T20:45:46.733+02:00  INFO 304 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 0.741 seconds (process running for 6.196)
+2023-04-02T20:45:46.748+02:00  INFO 304 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T20:46:35.129+02:00  INFO 14144 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 14144 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:46:35.131+02:00  INFO 14144 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:46:36.758+02:00  INFO 14144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:46:36.776+02:00  INFO 14144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:46:36.778+02:00  INFO 14144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:46:36.930+02:00  INFO 14144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:46:36.931+02:00  INFO 14144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1504 ms
+2023-04-02T20:46:38.041+02:00  INFO 14144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61988 (http) with context path ''
+2023-04-02T20:46:38.051+02:00  INFO 14144 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.353 seconds (process running for 4.802)
+2023-04-02T20:46:38.543+02:00  INFO 14144 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T20:46:38.596+02:00  INFO 14144 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 14144 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T20:46:38.596+02:00  INFO 14144 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T20:46:38.791+02:00  INFO 14144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T20:46:38.793+02:00  INFO 14144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T20:46:38.793+02:00  INFO 14144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T20:46:38.828+02:00  INFO 14144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T20:46:38.828+02:00  INFO 14144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 229 ms
+2023-04-02T20:46:39.278+02:00  INFO 14144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61990 (http) with context path ''
+2023-04-02T20:46:39.282+02:00  INFO 14144 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 0.723 seconds (process running for 6.033)
+2023-04-02T20:46:39.296+02:00  INFO 14144 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:05:12.481+02:00  INFO 9284 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 9284 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:05:12.483+02:00  INFO 9284 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:05:13.749+02:00  INFO 9284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:05:13.759+02:00  INFO 9284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:05:13.759+02:00  INFO 9284 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:05:13.870+02:00  INFO 9284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:05:13.870+02:00  INFO 9284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1160 ms
+2023-04-02T21:05:15.101+02:00  INFO 9284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62913 (http) with context path ''
+2023-04-02T21:05:15.113+02:00  INFO 9284 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 2.947 seconds (process running for 4.097)
+2023-04-02T21:05:16.515+02:00  INFO 9284 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:06:48.091+02:00  INFO 18328 --- [main] c.switchfully.eurder.EurderApplication   : Starting EurderApplication using Java 17.0.6 with PID 18328 (C:\_development\switchfully\spring-boot-projects\eurder\target\classes started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:06:48.096+02:00  INFO 18328 --- [main] c.switchfully.eurder.EurderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:06:49.141+02:00  INFO 18328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-02T21:06:49.154+02:00  INFO 18328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:06:49.154+02:00  INFO 18328 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:06:49.288+02:00  INFO 18328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:06:49.289+02:00  INFO 18328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1143 ms
+2023-04-02T21:06:50.271+02:00  INFO 18328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-02T21:06:50.281+02:00  INFO 18328 --- [main] c.switchfully.eurder.EurderApplication   : Started EurderApplication in 2.696 seconds (process running for 3.416)
+2023-04-02T21:06:54.865+02:00  INFO 17096 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 17096 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:06:54.867+02:00  INFO 17096 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:06:56.581+02:00  INFO 17096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:06:56.596+02:00  INFO 17096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:06:56.597+02:00  INFO 17096 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:06:56.750+02:00  INFO 17096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:06:56.750+02:00  INFO 17096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1571 ms
+2023-04-02T21:06:58.058+02:00  INFO 17096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62932 (http) with context path ''
+2023-04-02T21:06:58.071+02:00  INFO 17096 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.611 seconds (process running for 5.035)
+2023-04-02T21:06:59.546+02:00  INFO 18328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02T21:06:59.547+02:00  INFO 18328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02T21:06:59.548+02:00  INFO 18328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-02T21:06:59.707+02:00  INFO 17096 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:16:16.580+02:00  INFO 12052 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 12052 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:16:16.582+02:00  INFO 12052 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:16:18.247+02:00  INFO 12052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:16:18.262+02:00  INFO 12052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:16:18.262+02:00  INFO 12052 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:16:18.428+02:00  INFO 12052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:16:18.429+02:00  INFO 12052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1549 ms
+2023-04-02T21:16:19.800+02:00  INFO 12052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62975 (http) with context path ''
+2023-04-02T21:16:19.813+02:00  INFO 12052 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.659 seconds (process running for 5.113)
+2023-04-02T21:16:21.293+02:00  INFO 12052 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:17:48.315+02:00  INFO 18400 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 18400 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:17:48.318+02:00  INFO 18400 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:17:50.003+02:00  INFO 18400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:17:50.019+02:00  INFO 18400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:17:50.020+02:00  INFO 18400 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:17:50.181+02:00  INFO 18400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:17:50.182+02:00  INFO 18400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1570 ms
+2023-04-02T21:17:51.369+02:00  INFO 18400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63008 (http) with context path ''
+2023-04-02T21:17:51.380+02:00  INFO 18400 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.489 seconds (process running for 4.902)
+2023-04-02T21:17:52.817+02:00  INFO 18400 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:18:34.499+02:00  INFO 20720 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 20720 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:18:34.502+02:00  INFO 20720 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:18:36.165+02:00  INFO 20720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:18:36.178+02:00  INFO 20720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:18:36.179+02:00  INFO 20720 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:18:36.330+02:00  INFO 20720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:18:36.330+02:00  INFO 20720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1543 ms
+2023-04-02T21:18:37.641+02:00  INFO 20720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63015 (http) with context path ''
+2023-04-02T21:18:37.650+02:00  INFO 20720 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 3.569 seconds (process running for 4.977)
+2023-04-02T21:18:39.075+02:00  INFO 20720 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:36:46.859+02:00  INFO 9568 --- [main] c.s.eurder.service.UserServiceTest       : Starting UserServiceTest using Java 17.0.6 with PID 9568 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:36:46.861+02:00  INFO 9568 --- [main] c.s.eurder.service.UserServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:36:49.714+02:00  INFO 9568 --- [main] c.s.eurder.service.UserServiceTest       : Started UserServiceTest in 3.244 seconds (process running for 4.634)
+2023-04-02T21:39:54.413+02:00  INFO 2844 --- [main] c.s.eurder.service.UserServiceTest       : Starting UserServiceTest using Java 17.0.6 with PID 2844 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:39:54.415+02:00  INFO 2844 --- [main] c.s.eurder.service.UserServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:39:57.239+02:00  INFO 2844 --- [main] c.s.eurder.service.UserServiceTest       : Started UserServiceTest in 3.203 seconds (process running for 4.571)
+2023-04-02T21:41:09.904+02:00  INFO 4192 --- [main] c.s.eurder.service.UserServiceTest       : Starting UserServiceTest using Java 17.0.6 with PID 4192 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:41:09.906+02:00  INFO 4192 --- [main] c.s.eurder.service.UserServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:41:12.797+02:00  INFO 4192 --- [main] c.s.eurder.service.UserServiceTest       : Started UserServiceTest in 3.283 seconds (process running for 4.675)
+2023-04-02T21:47:58.791+02:00  INFO 19772 --- [main] c.s.eurder.api.ItemControllerTest        : Starting ItemControllerTest using Java 17.0.6 with PID 19772 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:47:58.794+02:00  INFO 19772 --- [main] c.s.eurder.api.ItemControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:48:00.395+02:00  INFO 19772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:48:00.409+02:00  INFO 19772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:48:00.410+02:00  INFO 19772 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:48:00.566+02:00  INFO 19772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:48:00.567+02:00  INFO 19772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1488 ms
+2023-04-02T21:48:01.763+02:00  INFO 19772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56485 (http) with context path ''
+2023-04-02T21:48:01.774+02:00  INFO 19772 --- [main] c.s.eurder.api.ItemControllerTest        : Started ItemControllerTest in 3.419 seconds (process running for 4.893)
+2023-04-02T21:48:03.223+02:00  INFO 19772 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:55:28.915+02:00  INFO 7652 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 7652 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:55:28.919+02:00  INFO 7652 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:55:31.584+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:55:31.606+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:55:31.606+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:55:31.832+02:00  INFO 7652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:55:31.833+02:00  INFO 7652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2173 ms
+2023-04-02T21:55:33.325+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56526 (http) with context path ''
+2023-04-02T21:55:33.335+02:00  INFO 7652 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 5.105 seconds (process running for 7.744)
+2023-04-02T21:55:34.076+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:55:34.135+02:00  INFO 7652 --- [main] c.s.e.api.UserControllerIntegrationTest  : Starting UserControllerIntegrationTest using Java 17.0.6 with PID 7652 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:55:34.136+02:00  INFO 7652 --- [main] c.s.e.api.UserControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:55:34.377+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:55:34.378+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:55:34.378+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:55:34.412+02:00  INFO 7652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:55:34.412+02:00  INFO 7652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 272 ms
+2023-04-02T21:55:34.937+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56528 (http) with context path ''
+2023-04-02T21:55:34.940+02:00  INFO 7652 --- [main] c.s.e.api.UserControllerIntegrationTest  : Started UserControllerIntegrationTest in 0.849 seconds (process running for 9.348)
+2023-04-02T21:55:34.954+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:55:34.963+02:00  INFO 7652 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.api.ItemControllerTest]: ItemControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-02T21:55:34.965+02:00  INFO 7652 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.api.ItemControllerTest
+2023-04-02T21:55:34.997+02:00  INFO 7652 --- [main] c.s.eurder.api.ItemControllerTest        : Starting ItemControllerTest using Java 17.0.6 with PID 7652 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:55:34.998+02:00  INFO 7652 --- [main] c.s.eurder.api.ItemControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:55:35.157+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:55:35.158+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:55:35.158+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:55:35.186+02:00  INFO 7652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:55:35.187+02:00  INFO 7652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2023-04-02T21:55:35.656+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56530 (http) with context path ''
+2023-04-02T21:55:35.659+02:00  INFO 7652 --- [main] c.s.eurder.api.ItemControllerTest        : Started ItemControllerTest in 0.689 seconds (process running for 10.066)
+2023-04-02T21:55:35.671+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:55:35.677+02:00  INFO 7652 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.api.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-02T21:55:35.679+02:00  INFO 7652 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.api.UserControllerTest
+2023-04-02T21:55:35.709+02:00  INFO 7652 --- [main] c.s.eurder.api.UserControllerTest        : Starting UserControllerTest using Java 17.0.6 with PID 7652 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:55:35.709+02:00  INFO 7652 --- [main] c.s.eurder.api.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:55:35.874+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-02T21:55:35.875+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-02T21:55:35.876+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-02T21:55:35.907+02:00  INFO 7652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-02T21:55:35.908+02:00  INFO 7652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 197 ms
+2023-04-02T21:55:36.288+02:00  INFO 7652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56532 (http) with context path ''
+2023-04-02T21:55:36.291+02:00  INFO 7652 --- [main] c.s.eurder.api.UserControllerTest        : Started UserControllerTest in 0.609 seconds (process running for 10.699)
+2023-04-02T21:55:37.667+02:00  INFO 7652 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-02T21:55:37.705+02:00  INFO 7652 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.switchfully.eurder.EurderApplicationTests]: EurderApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-02T21:55:37.712+02:00  INFO 7652 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.switchfully.eurder.EurderApplication for test class com.switchfully.eurder.EurderApplicationTests
+2023-04-02T21:55:37.752+02:00  INFO 7652 --- [main] c.s.eurder.EurderApplicationTests        : Starting EurderApplicationTests using Java 17.0.6 with PID 7652 (started by JorisC in C:\_development\switchfully\spring-boot-projects\eurder)
+2023-04-02T21:55:37.753+02:00  INFO 7652 --- [main] c.s.eurder.EurderApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-04-02T21:55:38.323+02:00  INFO 7652 --- [main] c.s.eurder.EurderApplicationTests        : Started EurderApplicationTests in 0.599 seconds (process running for 12.731)

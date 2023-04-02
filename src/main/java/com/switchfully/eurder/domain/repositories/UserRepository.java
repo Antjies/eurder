@@ -4,17 +4,23 @@ import com.switchfully.eurder.domain.models.Admin;
 import com.switchfully.eurder.domain.models.Customer;
 import com.switchfully.eurder.domain.models.User;
 import com.switchfully.eurder.exception.exceptions.CustomerNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
+@DependsOn("userCredentialsRepository")
 public class UserRepository {
 
+
     private final UserCredentialsRepository userCredentialsRepository;
+
     private ConcurrentHashMap<String, User> userDatabase;
 
+    @Autowired
     public UserRepository(UserCredentialsRepository userCredentialsRepository) {
         this.userCredentialsRepository = userCredentialsRepository;
         userDatabase = new ConcurrentHashMap<>();
