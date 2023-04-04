@@ -30,7 +30,7 @@ public class ItemController {
     }
 
     //Story 2: Creating a new Item -> Need to be Admin
-    @PostMapping(consumes = "application/json")
+    @PostMapping(consumes = "application/json", produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     @Operation(security = @SecurityRequirement(name = "basicAuth")) // verwijzing nodig naar swaggerconfig
     public void addNewItem(@RequestBody CreateItemDTO createItemDTO, @RequestHeader String authorization) {
